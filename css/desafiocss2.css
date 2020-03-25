@@ -53,6 +53,7 @@
 .aside-copy{
     color: rgb(176, 202, 219);;
     font-size: 2.5em;
+    padding-top: 0em;
     padding-right: 1em;
     text-align: right;
     font-family: sans-serif;
