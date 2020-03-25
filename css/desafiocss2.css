@@ -1,0 +1,62 @@
+.layout{
+    position: static;
+    
+}
+.about{
+    position: absolute;
+    right: 335px;
+    left: 15px;
+    width: 425px;
+    height: 725px;
+    background-color:rgb(61, 79, 93);
+}
+.content{
+    position: absolute;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    font-family: sans-serif;
+    left: 425px;
+    right: 15px;
+    width: 1000px;
+    height: 725px;
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-div{
+    display: block;
+    margin-left: 16em;
+    background-color: rgb(61, 79, 93);
+  
+}
+.btn{
+    background-color:  rgb(61, 79, 93);
+    border:  1px solid;
+    color:  rgb(176, 202, 219);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.aside-title{
+    font-size: 3.5em;
+    padding-top: 2.5em;
+    padding-right: 1em;
+    padding-bottom: 0.2em;
+    text-align: right;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 1.6em;
+    color: white;
+}
+.aside-copy{
+    color: rgb(176, 202, 219);;
+    font-size: 2.5em;
+    padding-right: 1em;
+    text-align: right;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.post-title{
+    color: #aaa;
+    border-bottom: 1px solid #eee;
+}
