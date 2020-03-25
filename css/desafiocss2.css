@@ -58,6 +58,9 @@
 }
 .post-title{
     color: #aaa;
-    border-bottom: 1px solid #eee;
-    font-display:;
+    font-family: sans-serif;
+    
+}
+a{
+    text-decoration: none;
 }
