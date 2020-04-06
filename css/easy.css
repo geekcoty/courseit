@@ -1,0 +1,73 @@
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.uno{
+    background-color: indianred;
+    height: 200px;
+}
+.dos{
+    background-color: #d2d2d2;
+    width: 100vh;
+
+}
+
+.modal{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 100vh;
+    margin: -95px;
+    margin-left: 400px;
+}
+.tres{
+    background-color: #d2d2d2;
+    height: 375px;
+}
+.cuatro{
+    background-color: black;
+    height: 200px;
+    color: white;
+}
+.cinco{
+    background-color: white;
+    height: 45px;
+}
+.seis{
+    background-color: indianred;
+    opacity: 0.50;
+    height: 100px;
+}
+.siete{
+    background-color: white;
+    height: 100px;
+}
+.button{
+    margin-top: 35px;
+    margin-left: 170px;
+    background-color: indianred;
+    color: white;
+    font-size: 15px;
+    padding: 1.1em;
+    letter-spacing: 0.1em;
+}
+.title{
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin: 35px;
+    letter-spacing: 0.1em;
+
+
+}
+.content{
+    padding: 1.5em;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.2em;
+}
+.titlefour{
+padding: 1.5em;
+}
+
