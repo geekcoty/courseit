@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 .contenedor{
     display: flex;
     flex-direction: column;
+    font-family:'Open Sans', sans-serif;
 }
 .uno{
     background-color: indianred;
@@ -16,9 +19,9 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 550px;
-    height: 100vh;
-    margin: -95px;
+    width: 50vw;
+    min-height: 100vh;
+    margin: -100px;
     margin-left: 400px;
 }
 .tres{
@@ -32,11 +35,10 @@
 }
 .cinco{
     background-color: white;
-    height: 45px;
+    height: 25px;
 }
 .seis{
-    background-color: indianred;
-    opacity: 0.50;
+    background-color: #ea9b9b;
     height: 100px;
 }
 .siete{
@@ -54,20 +56,165 @@
 }
 .title{
     font-size: 36px;
-    font-weight: 400;
     text-align: center;
     margin: 35px;
     letter-spacing: 0.1em;
-
-
 }
 .content{
     padding: 1.5em;
     text-align: justify;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2em;
 }
-.titlefour{
+.title-four{
 padding: 1.5em;
+font-size: 16px;
 }
 
+.content-four{
+    padding:1.5em;
+    text-align:justify;
+    font-size: 16px;
+    color: #7e7575;
+    line-height: 1.2em;
+}
+
+.link-four{
+
+    padding: 1.5em;
+    font-size: 12px;
+    line-height: 1.2em;
+}
+a:link{
+    color: indianred;
+}
+a:visited{
+    color: indianred;
+}
+.content-six{
+    margin-top: 2.5em;
+    text-align: center;
+    font-size: 12px;
+  
+}
+.link-six{
+    text-align: center;
+    font-size: 12px;
+}
+.content-siete{
+    padding: 1.5em;
+    font-size: 12px;
+}
+.texto{
+    padding-left: 0.2em;
+    padding-top: 1em;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.uno{
+    background-color: indianred;
+    height: 200px;
+}
+.dos{
+    background-color: #d2d2d2;
+  
+
+}
+
+.modal{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    min-height: 100vh;
+    margin: -100px;
+    margin-left: 400px;
+}
+.tres{
+    background-color: #d2d2d2;
+    height: 375px;
+}
+.cuatro{
+    background-color: black;
+    height: 200px;
+    color: white;
+}
+.cinco{
+    background-color: white;
+    height: 25px;
+}
+.seis{
+    background-color: #ea9b9b;
+    height: 100px;
+}
+.siete{
+    background-color: white;
+    height: 100px;
+}
+.button{
+    margin-top: 35px;
+    margin-left: 170px;
+    background-color: indianred;
+    color: white;
+    font-size: 15px;
+    padding: 1.1em;
+    letter-spacing: 0.1em;
+}
+.title{
+    font-size: 36px;
+    text-align: center;
+    margin: 35px;
+    letter-spacing: 0.1em;
+}
+.content{
+    padding: 1.5em;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+.title-four{
+padding: 1.5em;
+font-size: 16px;
+}
+
+.content-four{
+    padding:1.5em;
+    text-align:justify;
+    font-size: 16px;
+    color: #7e7575;
+    line-height: 1.2em;
+}
+
+.link-four{
+
+    padding: 1.5em;
+    font-size: 12px;
+    line-height: 1.2em;
+}
+a:link{
+    color: indianred;
+}
+a:visited{
+    color: indianred;
+}
+.content-six{
+    margin-top: 2.5em;
+    text-align: center;
+    font-size: 12px;
+  
+}
+.link-six{
+    text-align: center;
+    font-size: 12px;
+}
+.content-siete{
+    padding: 2.5em;
+    font-size: 12px;
+}
+.texto{
+    padding-left: 0.2em;
+    padding-top: 1em;
+    text-align: justify;
+    font-size: 12px;
+}
