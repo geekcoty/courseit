@@ -1,0 +1,26 @@
+.body {
+  background-color: #c3c9ce;
+  font-size: 1rem;
+  color: black;
+}
+
+.main-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 50vw;
+  min-height: 100vh;
+  text-align: center;
+  background-color: white;
+}
+.main-container .agency .agency-header {
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+.main-container .agency .agency-header .agency-content {
+  font-size: 1.8rem;
+  line-height: 3.5rem;
+  padding: 4rem;
+}
+
+/*# sourceMappingURL=style.css.map */

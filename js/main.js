@@ -1,6 +1,1 @@
-
-console.log("Que onda la banda? Se rompe ese lorem ipsum")
-var firstVariable = "Mi primer variable!"
-console.log (firstVariable)
-firstVariable
-
+Dada una variable "x" la cual contiene un numero, determinar si ese numero es positivo o negativo. Si es cero, mostrar otro mensaje
