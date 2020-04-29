@@ -32,14 +32,14 @@ body{
 
         @media (max-width:$mobile-breakpoint){
             flex-direction: column;
+            display: block;
         }
         .proj-indiv-container{
-            margin:  2px auto;
-            width: 255px;
-            height: 255px;
             background-image: url("https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1573&q=80");
             background-position: center;
             background-size: cover;
+            flex: 1;
+            max-width: 25%;
             .proj-indiv-title{
                 font-size: $templateFontSize;
             }
