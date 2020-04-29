@@ -12,33 +12,63 @@ $contentFontSize:0.8rem;
 $mainContatinerWidth: 50vw;
 $mainContainerHeight: 100vh;
 
-.body{
+body{
     background-color: $bodyBackground;
     font-size: $templateFontSize;
     color: $templateFontColor;
 }
-
-        .main-container{
-        margin: 0 auto;
+.main-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: $mainContatinerWidth;
+    min-height: $mainContainerHeight;
+    text-align: center;
+    background-color: $templateBackground;
+    .proj-gallery-container{
         display: flex;
-        flex-direction: column;
-        max-width: $mainContatinerWidth;
-        min-height: $mainContainerHeight;
-        text-align: center;
-        background-color: $templateBackground;
-            .agency{
-                .agency-header{
-                    font-weight: 600;
-                    padding-top: 0.5rem;
-                
-                .agency-content{
-                    font-size: 1.8rem;
-                    line-height: 3.5rem;
-                    padding: 4rem;
-                
-
-            }
-            }
-            }
+        flex-wrap: wrap;
     
+
+        @media (max-width:$mobile-breakpoint){
+            flex-direction: column;
         }
+        .proj-indiv-container{
+            margin:  2px auto;
+            width: 255px;
+            height: 255px;
+            background-image: url("https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1573&q=80");
+            background-position: center;
+            background-size: cover;
+            .proj-indiv-title{
+                font-size: $templateFontSize;
+            }
+        }
+            
+        }
+    }
+    .proj-container{
+        .proj-container-text{
+            font-size: $contentFontSize;
+            line-height: 2.5rem;
+            color: $contentColor;
+            padding: 0.3rem;
+        }  
+        .proj-container-title{
+        font-size: 1.3rem; 
+   
+        }
+    }  
+    .agency {
+      .agency-header {
+        font-weight: 600;
+        padding-top: 0.5rem;
+      }
+      .agency-content {
+        font-size: 1.8rem;
+        line-height: 3.5rem;
+        padding: 4rem;
+        font-family: sans-serif;
+      }
+      }
+    

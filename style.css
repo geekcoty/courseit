@@ -1,4 +1,4 @@
-.body {
+body {
   background-color: #c3c9ce;
   font-size: 1rem;
   color: black;
@@ -13,14 +13,46 @@
   text-align: center;
   background-color: white;
 }
-.main-container .agency .agency-header {
+.main-container .proj-gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 468px) {
+  .main-container .proj-gallery-container {
+    flex-direction: column;
+  }
+}
+.main-container .proj-gallery-container .proj-indiv-container {
+  margin: 2px auto;
+  width: 255px;
+  height: 255px;
+  background-image: url("https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1573&q=80");
+  background-position: center;
+  background-size: cover;
+}
+.main-container .proj-gallery-container .proj-indiv-container .proj-indiv-title {
+  font-size: 1rem;
+}
+
+.proj-container .proj-container-text {
+  font-size: 0.8rem;
+  line-height: 2.5rem;
+  color: #73777a;
+  padding: 0.3rem;
+}
+.proj-container .proj-container-title {
+  font-size: 1.3rem;
+}
+
+.agency .agency-header {
   font-weight: 600;
   padding-top: 0.5rem;
 }
-.main-container .agency .agency-header .agency-content {
+.agency .agency-content {
   font-size: 1.8rem;
   line-height: 3.5rem;
   padding: 4rem;
+  font-family: sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
