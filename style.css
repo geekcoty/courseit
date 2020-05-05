@@ -1,0 +1,22 @@
+body {
+  background-color: #73777a;
+}
+
+.template-container {
+  width: 50vw;
+  height: 100vh;
+  background-color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+.template-container .header {
+  padding: 1.5rem;
+}
+.template-container .description {
+  padding: 3.5rem;
+}
+.template-container .project-gallery .proj-title {
+  padding: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

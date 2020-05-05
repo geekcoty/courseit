@@ -1,0 +1,36 @@
+$mobile-breakpoint:468px;
+
+$bodyBackground: #c3c9ce;
+$templateBackground: white;
+$templateFontColor: black;
+$accentWordsColor:#0093FB;
+$contentColor: #73777a;
+
+$templateFontSize:1rem;
+$contentFontSize:0.8rem;
+
+$mainContatinerWidth: 50vw;
+$mainContainerHeight: 100vh;
+
+body{
+    background-color: $contentColor;
+}
+
+.template-container{
+    width: $mainContatinerWidth;
+    height: $mainContainerHeight;
+    background-color: $templateBackground;
+    margin: 0 auto;
+    text-align: center;
+    .header{
+        padding: 1.5rem;
+    }
+    .description{
+        padding: 3.5rem;
+    }
+    .project-gallery{
+        .proj-title{
+            padding: 5rem;
+        }
+    }
+}
