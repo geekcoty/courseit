@@ -1,22 +1,71 @@
 body {
   background-color: #73777a;
+  font-family: "Vidaloka", serif;
 }
 
-.template-container {
-  width: 50vw;
-  height: 100vh;
-  background-color: white;
+.wrapper {
   margin: 0 auto;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  max-width: 55vw;
+  min-height: 100vh;
+}
+.wrapper .header {
+  font-weight: 600;
+  text-align: center;
+  padding: 0.3rem;
+}
+.wrapper .template {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
-.template-container .header {
-  padding: 1.5rem;
+.wrapper .template .hero-section {
+  padding: 2rem;
 }
-.template-container .description {
-  padding: 3.5rem;
+.wrapper .template .hero-section .hero-section-text {
+  font-size: 2.5rem;
 }
-.template-container .project-gallery .proj-title {
-  padding: 5rem;
+.wrapper .template .hero-section .hero-section-text .accent {
+  color: #0093FB;
+}
+.wrapper .proj-section {
+  padding: 3rem;
+}
+.wrapper .proj-section .proj-section-title {
+  font-size: 1.3rem;
+}
+.wrapper .proj-section .proj-section-text {
+  padding-top: 0.3rem;
+  line-height: 2rem;
+  color: #73777a;
+  font-size: 0.8rem;
+}
+.wrapper .gallery-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+}
+.wrapper .gallery-section .image {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://images.unsplash.com/photo-1528255671579-01b9e182ed1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80");
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 2rem;
+}
+.wrapper .gallery-section .image-text {
+  line-height: 1.5rem;
+}
+.wrapper .gallery-section .title {
+  font-weight: 600;
+}
+.wrapper .gallery-section .description {
+  color: #73777a;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap');
+
+
+body {
+
+    margin: 0px;
+    font-family: 'Baloo 2', cursive;
+
+}
+
+
+.content {
+
+    background-color: whitesmoke;
+    height: auto;
+    padding: 20px 0px;
+
+}
+
+.content .page {
+
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    margin: 0px auto;
+
+}
+
+.content .page .tittlepage  {
+    
+    text-align: center;
+    padding: 15px 0px;
+    
+}
+
+h2 {
+    font-weight: 100;
+   
+    font-size: 2em;
+}
+
+.blue {
+    font-weight: 600;
+    color: blue;
+}
+
+.projects { 
+
+    text-align: center;
+
+} 
+
+h3 { 
+
+font-size: 1.5em;
+font-weight: 600;
+
+}
+
+.p { 
+    font-weight: 300;
+    color: gray;
+    padding: 0px 40px;
+    font-size: 1.2em;
+}
+
+.imagespage { 
+
+    display: flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+    
+.image {
+
+ 
+ flex-direction: column;
+ display:flex;
+ padding-bottom: 10px;
+}
+
+
+.img1 {
+
+    background-image: url(https://images.unsplash.com/photo-1547584370-2cc98b8b8dc8?ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80);
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.img2 {
+
+    background-image: url(https://images.unsplash.com/photo-1575367439058-6096bb9cf5e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=401&q=80);
+    width: 230px;
+    height: 230px;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.tittleimg {
+    text-align: center;
+    font-weight: 600;
+}
+
+.descriptionimg {
+
+    text-align: center;
+    font-size: 0.9em;
+    color: gray;
+}
