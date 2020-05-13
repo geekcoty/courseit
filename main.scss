@@ -25,11 +25,11 @@ $template-fontcolor: white;
             justify-content: space-around;
         }
         .section-hero{
-            padding: 3rem;
+            padding: 1.5rem;
             text-align: center;
             line-height: 2.2rem;
             .section-hero-text{
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             .section-hero-description{
                 font-size: 1 rem;
@@ -47,6 +47,10 @@ $template-fontcolor: white;
         .footer-paragraph{
             max-width: 300px;
             margin: 1.3rem;
+            line-height: 1.4rem;
+            .footer-title{
+                padding-bottom: 0.5rem;
+            }
         }
     }
    
