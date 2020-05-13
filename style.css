@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +9,7 @@
   min-height: 55vh;
   display: flex;
   flex-direction: column;
+  font-family: "Open Sans", sans-serif;
 }
 .global-wrapper .wrapper {
   padding-top: 0.5rem;
@@ -19,6 +21,14 @@
   display: flex;
   justify-content: space-between;
   padding: 0.3rem;
+}
+.global-wrapper .wrapper .navigation .firm-logo {
+  display: flex;
+  justify-content: center;
+}
+.global-wrapper .wrapper .navigation .firm-logo .wistia-name {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
 }
 .global-wrapper .wrapper .navigation .login-button {
   border: 1 solid white;
@@ -53,28 +63,34 @@
   border: 0;
 }
 .global-wrapper .wrapper .section-form .input-select {
-  width: 93%;
+  width: 92%;
   padding: 1rem;
   margin: 0.5rem;
 }
 .global-wrapper .wrapper .section-form .input-button {
-  width: 93%;
+  width: 92%;
   padding: 0.5rem;
   margin: 0.5rem;
   border: 0;
   background-color: #121b24;
   color: white;
 }
-.global-wrapper .footer {
+.global-wrapper .wrapper .section-form .form-terms {
+  color: silver;
+  font-size: 0.8rem;
   padding: 0.5rem;
+}
+.global-wrapper .footer {
+  padding-top: 3.5rem;
+  padding-left: 0.5rem;
   display: flex;
   flex-wrap: wrap;
-  text-align: justify;
+  justify-content: center;
+  font-size: 0.8rem;
 }
 @media (max-width: 468px) {
   .global-wrapper .footer {
     flex-direction: column;
-    text-align: center;
   }
 }
 .global-wrapper .footer .footer-paragraph {

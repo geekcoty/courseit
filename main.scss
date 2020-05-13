@@ -6,6 +6,8 @@ $global-height: 55vh;
 $template-fontsize: 1rem;
 $template-fontcolor: white;
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -15,6 +17,7 @@ $template-fontcolor: white;
     min-height: $global-height;
     display: flex;
     flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
     .wrapper{
         padding-top: 0.5rem;
         color: $template-fontcolor;
@@ -24,6 +27,14 @@ $template-fontcolor: white;
             display: flex;
             justify-content: space-between;
             padding: 0.3rem;
+            .firm-logo{
+                display: flex;
+                justify-content: center;
+                .wistia-name{
+                    margin-left: 0.3rem;
+                    font-size: 1.5rem;
+                }
+            }
             .login-button{
                 border: 1 solid white;
                 background-color: $wrapper-background;
@@ -47,7 +58,7 @@ $template-fontcolor: white;
         display: flex;
         justify-content: center;
         @media (max-width:468px){
-            flex-direction: column;
+        flex-direction: column;
         }
        
             .input-form{
@@ -57,29 +68,36 @@ $template-fontcolor: white;
                 border: 0;
             }
             .input-select{
-                width: 93%;
+                width: 92%;
                 padding: 1rem;;
                 margin: 0.5rem;
             }
             .input-button{
-                width: 93%;
+                width: 92%;
                 padding: 0.5rem;
                 margin: 0.5rem;
                 border: 0;
                 background-color:#121b24;
                 color: white;
             }
+            .form-terms{
+                color: silver;
+                font-size: 0.8rem;
+                padding: 0.5rem;
+            }
         }
 
     }
     .footer{
-        padding: 0.5rem;
+        padding-top:3.5rem;
+        padding-left: 0.5rem;
         display: flex;
         flex-wrap: wrap;
-        text-align: justify;
+        justify-content: center;
+        font-size: 0.8rem;
         @media (max-width:468px){
             flex-direction: column;
-            text-align: center
+      
         }
        
         .footer-paragraph{
