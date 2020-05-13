@@ -41,6 +41,11 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 468px) {
+  .global-wrapper .wrapper .section-form {
+    flex-direction: column;
+  }
+}
 .global-wrapper .wrapper .section-form .input-form {
   width: 43%;
   padding: 0.5rem;
@@ -65,6 +70,12 @@
   display: flex;
   flex-wrap: wrap;
   text-align: justify;
+}
+@media (max-width: 468px) {
+  .global-wrapper .footer {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .global-wrapper .footer .footer-paragraph {
   max-width: 300px;

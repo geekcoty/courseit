@@ -46,6 +46,9 @@ $template-fontcolor: white;
         .section-form{
         display: flex;
         justify-content: center;
+        @media (max-width:468px){
+            flex-direction: column;
+        }
        
             .input-form{
                 width: 43%;
@@ -74,6 +77,11 @@ $template-fontcolor: white;
         display: flex;
         flex-wrap: wrap;
         text-align: justify;
+        @media (max-width:468px){
+            flex-direction: column;
+            text-align: center
+        }
+       
         .footer-paragraph{
             max-width: 300px;
             margin: 1.3rem;
