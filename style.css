@@ -17,12 +17,18 @@
 }
 .global-wrapper .wrapper .navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0.3rem;
+}
+.global-wrapper .wrapper .navigation .login-button {
+  border: 1 solid white;
+  background-color: #407294;
+  color: white;
 }
 .global-wrapper .wrapper .section-hero {
-  padding: 1.5rem;
+  padding: 1rem;
   text-align: center;
-  line-height: 2.2rem;
+  line-height: 2.5rem;
 }
 .global-wrapper .wrapper .section-hero .section-hero-text {
   font-size: 2rem;
@@ -30,7 +36,29 @@
 .global-wrapper .wrapper .section-hero .section-hero-description {
   font-size: 1 rem;
   color: silver;
-  padding: 1.2rem;
+}
+.global-wrapper .wrapper .section-form {
+  display: flex;
+  justify-content: center;
+}
+.global-wrapper .wrapper .section-form .input-form {
+  width: 43%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 0;
+}
+.global-wrapper .wrapper .section-form .input-select {
+  width: 93%;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.global-wrapper .wrapper .section-form .input-button {
+  width: 93%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: 0;
+  background-color: #121b24;
+  color: white;
 }
 .global-wrapper .footer {
   padding: 0.5rem;

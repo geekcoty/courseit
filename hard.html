@@ -12,15 +12,44 @@
    <section class="wrapper">
     
         <nav class="navigation">
-            <img src="#" class="image" alt="wistia logo">
-            <span class="wistia-name">WISTIA</span>
-            <button class=" login-button"> Login</button>
+            <div class="firm-logo">
+                <img src="#" class="image" alt="wistia logo">
+                <span class="wistia-name">WISTIA</span>
+            </div>
+            <button class="login-button"> Login</button>
         </nav>
         <article class="section-hero">
             <p class="section-hero-text">Sign up for your free Wistia account</p>
             <p class="section-hero-description">Use Wistia and all its features for free, forever!</p>
         </article>
-        <article class="section-form"></article>
+        <article class="section-form">
+            <form class="actual-form" action="#">
+                <label>
+                    <input type="text" class="input-form" name="name" placeholder="First name">
+                </label>
+                <label>
+                    <input type="text" class="input-form" name="lastname" placeholder="Last name">
+                </label>
+                <br>
+                <label>
+                    <input type="text" class="input-form" name="name" placeholder="E-mail">
+                </label>
+                <label>
+                    <input type="password" class="input-form" name="name" placeholder="Set a Password" maxlength="8">
+                </label>
+                <br>
+                <select name="select" class="input-select">
+                    <option value="1">How did you hear about us?</option>
+                    <option value="1">Twitter</option>
+                    <option value="2">Facebook</option>
+                    <option value="3">LinkedIn</option>
+                    <option value="4">Word-to-mouth</option>
+                </select>
+                <br>
+               <button class="input-button">Create account</button>
+        
+            </form>
+        </article>
    </section> 
     
     <footer class="footer">
