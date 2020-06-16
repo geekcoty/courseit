@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #0557a3;
+  font-size: 1rem;
+}
+
+.wrapper {
+  width: 25vw;
+  height: 95vh;
+  background-color: #fffafa;
+  color: #c90000;
+  margin: 0 auto;
+  text-align: center;
+}
+.wrapper .form {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .form .search .search-input {
+  width: 20rem;
+  margin: 1rem 0 0.5rem 0;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  border: 0;
+  background-color: #92ccdd;
+}
+.wrapper .form .search .search-submit {
+  width: 20rem;
+  margin: 1rem 0 0.5rem 0;
+  padding: 1rem;
+  border-radius: 0.2rem;
+  border: 0;
+  background-color: #c90000;
+  color: white;
+}
+.wrapper .form .data {
+  /*display:none;*/
+  margin-top: 2rem;
+  font-family: "Lato", sans-serif;
+}
+.wrapper .form .data .userAvatar .userimage {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.wrapper .form .data .data-heading {
+  margin: 1.5rem;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=styles.css.map */

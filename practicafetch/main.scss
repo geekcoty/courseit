@@ -1,0 +1,74 @@
+$backgroundColor: 	#0557a3;
+$fontColor:	#c90000;
+$fontSize: 1rem;
+
+$wrapperWidth: 25vw;
+$wrapperHeight: 95vh;
+$wrapperBackground: #fffafa;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*,
+*:after,
+*:before {
+box-sizing: border-box;
+margin: 0;
+}
+
+body{
+    background-color: $backgroundColor;
+    font-size: $fontSize;
+}
+
+.wrapper{
+   width: $wrapperWidth;
+   height: $wrapperHeight;
+   background-color: $wrapperBackground;
+   color: $fontColor;
+   margin: 0 auto;
+   text-align:center;
+   .form{
+        margin-top: 1.5rem;
+        display:flex;
+        flex-direction:column;
+       .search{
+           .search-input{
+               width:20rem;
+               margin: 1rem 0 0.5rem 0;
+               padding: 1rem;
+               border-radius: .2rem;
+               border: 0;
+               background-color: 	#92ccdd;           
+           }
+           .search-submit{
+               width:20rem;
+               margin: 1rem 0 0.5rem 0;
+               padding: 1rem;
+               border-radius: .2rem;
+               border: 0;
+               background-color:#c90000;
+               color:white;           
+           }
+       }
+       .data{
+           /*display:none;*/
+           margin-top: 2rem;
+            font-family: 'Lato', sans-serif;
+            .userAvatar{
+                .userimage{
+                          width: 100px;
+                          height: 100px;
+                          display:inline-block;
+                          border-radius: 50%
+                }
+            }
+
+            .data-heading{
+                 margin: 1.5rem;
+                 font-weight: 800;
+                 text-decoration: underline;
+
+            }
+       }
+   }
+}
