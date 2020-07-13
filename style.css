@@ -1,4 +1,6 @@
-* {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
   margin: 0;
 }
@@ -57,15 +59,9 @@
   padding-right: 3.5rem;
   padding-bottom: 2.5rem;
 }
-.global-wrapper .product-gallery .product-wrapper .item-pic9 {
-  background-image: url("https://images.unsplash.com/photo-1512105221729-81cebc100837?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: center;
-}
 .global-wrapper .product-gallery .product-wrapper .item {
-  max-width: 300px;
-  max-height: 300px;
+  width: 150px;
+  height: 150px;
   background-color: violet;
 }
 
