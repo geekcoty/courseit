@@ -5,11 +5,27 @@ import Credit from "./components/Credit";
 
 
 class App extends React.Component {
-  render (){  
+  constructor (props){
+    super (props);
+    this.state = {
+      inputValue: ""
+    }
+  }
+
+handleData (inputValue) {
+this.setState ({
+  inputValue: inputValue
+})
+}
+
+  render (){ 
+
+    const { inputValue } = this.state 
+        
   return (
 <React.Fragment>
-  <Navbar />
-  <CardWrapper/>
+  <Navbar getData = { ( inputValue)  => this.handleData ( inputValue )} />
+  <CardWrapper filter = { inputValue } />
   <Credit />
 
 </React.Fragment>  
