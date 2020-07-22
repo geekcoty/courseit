@@ -8,7 +8,8 @@ import Prueba from "./Components/Pages/prueba.js"
 
 ReactDOM.render(
   <Router>
-    <Route path = "/prueba" component = {Prueba} /> 
+    <Route exact path = "/" component = { App } />
+    <Route exact path = "/prueba" component = {Prueba} /> 
 
 
     <App />
