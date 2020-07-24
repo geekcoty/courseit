@@ -34,7 +34,7 @@ const { filter } = this.props;
           <React.Fragment>
             { startup.title.toLowerCase().includes( filter.toLowerCase () ) && (
               <Link to={ `/products/${startup.title.toLowerCase()}`}>
-                <Card startup = {startup} key =  {key} />
+                <Card startup = {startup} key = {key} />
             </Link>
             )}
          </React.Fragment>

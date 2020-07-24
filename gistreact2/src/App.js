@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import CardWrapper from "./components/CardWrapper";
 import Credit from "./components/Credit";
 
-
 class App extends React.Component {
   constructor (props){
     super (props);

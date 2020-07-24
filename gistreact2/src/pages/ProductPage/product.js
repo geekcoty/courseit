@@ -1,14 +1,19 @@
 import React from "react";
-
-
+import  "./style.css";
+import Startups from "../../data/startups.json";
+import Navbar from "../../components/Navbar"
 class ProductPage extends React.Component {
   render () {
-    console.log (this.props);
+
+    console.log (Startups);
     return (
 
       <React.Fragment>
-        <p> Soy una product page</p>
-        Mi id es {this.props.match.params.courseit}
+        <Navbar />
+        <div className="content-wrapper">
+          course it
+        </div>
+
       </React.Fragment>
     )
   }

@@ -3,20 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter as Router, Route } from "react-router-dom";
-import Agregar from "./pages/Agregar/agregar.js";
-import ProductPage from "./pages/ProductPage/product.js";
 
 ReactDOM.render(
- 
-   <Router>
-    <Route exact path ="/" component= { App } />
-    <Route exact path = "/agregar"  component = { Agregar } />
-    <Route exact path ="/product/"  component = { ProductPage } />
-
-  </Router >,
-
-  
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
   document.getElementById('root')
 );
 
