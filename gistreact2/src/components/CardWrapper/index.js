@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../Card";
+import { Link } from "react-router-dom"
 
 class CardWrapper extends React.Component {
   constructor (props) {
@@ -31,8 +32,10 @@ const { filter } = this.props;
         startups.map((startup,key) => {
           return(
           <React.Fragment>
-            { startup.title.toLowerCase().includes( filter.toLoweCase () ) && (
+            { startup.title.toLowerCase().includes( filter.toLowerCase () ) && (
+              <Link to={ `/products/${startup.title.toLowerCase()}`}>
                 <Card startup = {startup} key =  {key} />
+            </Link>
             )}
          </React.Fragment>
           );

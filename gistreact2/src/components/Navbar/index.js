@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 class Navbar extends React.Component {
 handleChange(e) {
@@ -11,12 +12,20 @@ handleChange(e) {
 
   render (){
     //<p> {this.state.inputValue}</p>
+    const { showAutocomplete } = this.props;
     return (
+ 
       <React.Fragment>
         <nav> 
-          <h1> Soy un NavBar</h1>
+          <h1> Startup argentina </h1>
+          { showAutocomplete && (
+            <input onChange={(e) => this.handleChange(e)} type="text"
+              placeholder="Buscar Startup" />
+
+          )}
           <button> Buscar Startups </button>
-          <input onChange ={(e)=> this.handleChange(e)}type="text" />
+
+          <Link to="/agregar">Agregar Startup</Link>
           
 
         
