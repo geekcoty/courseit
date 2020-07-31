@@ -19,7 +19,10 @@ this.setState ({
 
 
 componentDidMount (){
- console.log (localStorage)
+ const persontoString = localStorage.getItem("persontoString");
+ const person = JSON.parse(persontoString);
+ console.log(person);
+
 }
 
   render (){ 
