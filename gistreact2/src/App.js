@@ -17,9 +17,9 @@ this.setState ({
 })
 }
 
-// ACÁ LEEMOS EL LOCAL STORAGE
+
 componentDidMount (){
-  console.log (localStorage)
+ console.log (localStorage)
 }
 
   render (){ 
