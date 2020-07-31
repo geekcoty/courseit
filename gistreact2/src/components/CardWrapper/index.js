@@ -27,7 +27,7 @@ render () {
 const { startups } = this.state;
 const { filter } = this.props;
     return (
-      <div>
+      <div className="startup-wrapper">
       {
         startups.map((startup,key) => {
           return(

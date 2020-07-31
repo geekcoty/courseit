@@ -17,6 +17,11 @@ this.setState ({
 })
 }
 
+// ACÁ LEEMOS EL LOCAL STORAGE
+componentDidMount (){
+  console.log (localStorage)
+}
+
   render (){ 
 
     const { inputValue } = this.state 

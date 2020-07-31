@@ -1,6 +1,7 @@
   
 nav {
   background-color: #20262c;
+  height: 6vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
