@@ -9,56 +9,63 @@
   margin: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
 .content-wrapper {
   display: flex;
   background-color: #817e7e;
+  font-family: "Roboto", sans-serif;
 }
 .content-wrapper .title-aside {
   margin-left: 1rem;
   font-weight: 600;
   padding-top: 0.5rem;
+  padding-right: 1rem;
   padding-bottom: 0.5rem;
 }
-.content-wrapper .filter-aside {
-  margin-left: 1rem;
-  margin-top: 5 rem;
-  margin-bottom: 0.5rem;
-  margin-right: 5.5rem;
-  padding: 0.5rem;
+.content-wrapper .filter-aside-group .filter-aside {
+  margin: 1rem 7.5rem 0.5rem 1rem;
+  padding: 1rem;
+  width: 10rem;
   border-radius: 10px;
   font-weight: 600;
   background-color: white;
+  display: flex;
+  justify-content: space-between;
 }
-.content-wrapper .title-section {
+
+.title-section {
   margin-left: 1rem;
   font-weight: 600;
   padding-top: 0.5rem;
 }
-.content-wrapper .product-gallery {
+
+.product-gallery {
   display: flex;
   flex-wrap: wrap;
 }
-.content-wrapper .product-gallery .product-wrapper {
+.product-gallery .product-wrapper {
   background-color: white;
   margin: 1rem;
+  border-radius: 10px;
 }
-.content-wrapper .product-gallery .product-wrapper .product-image {
-  width: 9rem;
-  height: 9rem;
+.product-gallery .product-wrapper .product-image {
+  width: 12rem;
+  height: 12rem;
   margin-bottom: 0.5rem;
+  border-radius: 10px;
   background-image: url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.content-wrapper .product-gallery .product-wrapper .product-name {
+.product-gallery .product-wrapper .product-name {
   padding-left: 0.5rem;
   padding-bottom: 0.5rem;
   font-weight: 600;
 }
-.content-wrapper .product-gallery .product-wrapper .product-price {
+.product-gallery .product-wrapper .product-price {
   padding-left: 0.5rem;
 }
 
@@ -72,6 +79,10 @@
   margin: 1rem;
   font-weight: 600;
   font-size: 1.1rem;
+}
+
+.fab {
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=desafio5.css.map */

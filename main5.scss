@@ -1,80 +1,87 @@
 $gallery-background: #817e7e;
-$filter-background:	white;
-$product-background:white;
+$filter-background: white;
+$product-background: white;
 
 *,
 *:after,
 *:before {
-box-sizing: border-box;
-margin: 0;
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.title-header{
+.title-header {
   margin: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
 }
-.content-wrapper{
+.content-wrapper {
   display: flex;
   background-color: $gallery-background;
-  .title-aside{
+  font-family: 'Roboto', sans-serif;
+  .title-aside {
     margin-left: 1rem;
     font-weight: 600;
     padding-top: 0.5rem;
+    padding-right: 1rem;
     padding-bottom: 0.5rem;
+  }
+  .filter-aside-group {
+      .filter-aside {
+      margin: 1rem 7.5rem 0.5rem 1rem;
+      padding:  1rem;
+      width: 10rem;
+      border-radius: 10px;
+      font-weight: 600;
+      background-color: $filter-background;
+      display: flex;
+      justify-content: space-between;
+      }
+  }
 
   }
-  .filter-aside{
-	 margin-left: 1rem;
-	 margin-top: 5 rem;
-	 margin-bottom: 0.5rem;
-	 margin-right:  5.5rem;
-    padding: 0.5rem;
-    border-radius: 10px;
-    font-weight: 600;
-    background-color: $filter-background;
-
-  }
-  .title-section{
+  .title-section {
     margin-left: 1rem;
     font-weight: 600;
     padding-top: 0.5rem;
   }
   .product-gallery {
-	
-	 display: flex;
-	 flex-wrap: wrap;
-      .product-wrapper{
-			background-color:$product-background;
-			margin: 1rem;
-			.product-image{
-			width: 9rem;
-		   height: 9rem;	
-		   margin-bottom: 0.5rem;	
-		  	background-image: url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80");
-		  	background-position: center;
-		  	background-repeat: no-repeat;
-			background-size: cover;
-			}
-			.product-name{
-				padding-left: 0.5rem;
-				padding-bottom: 0.5rem;
-				font-weight: 600;
-			}
-			.product-price{
-				padding-left: 0.5rem;
-			}
+    display: flex;
+    flex-wrap: wrap;
+    .product-wrapper {
+      background-color: $product-background;
+      margin: 1rem;
+      border-radius: 10px;
+      .product-image {
+        width: 12rem;
+        height: 12rem;
+        margin-bottom: 0.5rem;
+        border-radius: 10px;
+        background-image: url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .product-name {
+        padding-left: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-weight: 600;
+      }
+      .product-price {
+        padding-left: 0.5rem;
       }
     }
   }
-.lorem-footer{
+.lorem-footer {
   margin: 1rem;
   font-size: 1rem;
   color: #696969;
 }
-.title-footer{
+.title-footer {
   margin: 1rem;
   font-weight: 600;
   font-size: 1.1rem;
-
+}
+.fab {
+  margin-left: 1rem;
 }
