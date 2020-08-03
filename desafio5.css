@@ -1,0 +1,77 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.title-header {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.content-wrapper {
+  display: flex;
+  background-color: #817e7e;
+}
+.content-wrapper .title-aside {
+  margin-left: 1rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.content-wrapper .filter-aside {
+  margin-left: 1rem;
+  margin-top: 5 rem;
+  margin-bottom: 0.5rem;
+  margin-right: 5.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  font-weight: 600;
+  background-color: white;
+}
+.content-wrapper .title-section {
+  margin-left: 1rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+.content-wrapper .product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-wrapper .product-gallery .product-wrapper {
+  background-color: white;
+  margin: 1rem;
+}
+.content-wrapper .product-gallery .product-wrapper .product-image {
+  width: 9rem;
+  height: 9rem;
+  margin-bottom: 0.5rem;
+  background-image: url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.content-wrapper .product-gallery .product-wrapper .product-name {
+  padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 600;
+}
+.content-wrapper .product-gallery .product-wrapper .product-price {
+  padding-left: 0.5rem;
+}
+
+.lorem-footer {
+  margin: 1rem;
+  font-size: 1rem;
+  color: #696969;
+}
+
+.title-footer {
+  margin: 1rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/*# sourceMappingURL=desafio5.css.map */

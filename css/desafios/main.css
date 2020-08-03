@@ -1,0 +1,100 @@
+body {
+  background-color: #73777a;
+  font-family: 'Vidaloka', serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  max-width: 55vw;
+  min-height: 100vh;
+}
+
+.wrapper .header {
+  font-weight: 600;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.wrapper .template {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.wrapper .template .hero-section {
+  padding: 2rem;
+}
+
+.wrapper .template .hero-section .hero-section-text {
+  font-size: 2.5rem;
+}
+
+.wrapper .template .hero-section .hero-section-text .accent {
+  color: #0093FB;
+}
+
+.wrapper .proj-section {
+  padding: 3rem;
+}
+
+.wrapper .proj-section .proj-section-title {
+  font-size: 1.3rem;
+}
+
+.wrapper .proj-section .proj-section-text {
+  padding-top: 0.3rem;
+  line-height: 2rem;
+  color: #73777a;
+  font-size: 0.8rem;
+}
+
+.wrapper .gallery-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .gallery-section .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("https://images.unsplash.com/photo-1528255671579-01b9e182ed1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80");
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 2rem;
+}
+
+.wrapper .gallery-section .image-text {
+  line-height: 1.5rem;
+}
+
+.wrapper .gallery-section .title {
+  font-weight: 600;
+}
+
+.wrapper .gallery-section .description {
+  color: #73777a;
+}
+/*# sourceMappingURL=main.css.map */
