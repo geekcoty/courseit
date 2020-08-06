@@ -9,5 +9,15 @@
       "id": "2",
       "name": "Serie 2",
       "type": "serie"
+    },
+    {
+      "id": "3",
+      "name": "Pelicula 3",
+      "type": "movie"
+    },
+    {
+      "id": "4",
+      "name": "Serie 4",
+      "type": "serie"
     }
   ]

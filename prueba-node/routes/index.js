@@ -14,7 +14,19 @@ router.get('/', function(req, res, next) {
 });
 
 router.get ("/movies", (req, res) =>{
-  return res.json (movies);
+  const typeMovie = movies.filter(movie => 
+  movie.type === "movie") 
+
+return res.json(typeMovie);
+
+});
+
+router.get("/series", (req, res) => {
+
+  const typeSeries = movies.filter(movie => 
+    movie.type ==="serie")
+
+    return res.json(typeSeries);
 });
 
 module.exports = router;
