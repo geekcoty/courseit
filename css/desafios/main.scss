@@ -1,82 +1,76 @@
-$bodyBackground: #c3c9ce;
-$templateBackground: white;
-$templateFontColor: black;
-$accentWordsColor:#0093FB;
-$contentColor: #73777a;
+$BackgroundFooterHeader: white;
+$SectionAsideBakcground: grey;
+$FilterBackground: white;
+$FontColor: black;
+$FontSize: 1rem;
+$GlobalWrapperWidth: 100vw;
 
-$templateFontSize:1rem;
-$contentFontSize:0.8rem;
-
-$mainContatinerWidth: 55vw;
-$mainContainerHeight: 100vh;
-
-body{
-    background-color: $contentColor;
-    font-family:'Vidaloka', serif;
+*,
+*:after,
+*:before {
+box-sizing: border-box;
+margin: 0;
 }
-.wrapper{
-    margin: 0 auto;
-    background-color: $templateBackground;
-    color: $templateFontColor;
-    font-size: $templateFontSize;
-    max-width: $mainContatinerWidth;
-    min-height: $mainContainerHeight;
-    .header{
-        font-weight: 600;
-        text-align: center;
-        padding: 0.3rem;
+
+.header {
+background-color: $BackgroundFooterHeader;
+max-height: 70vh;
+font-size: 2.5rem;
+color: $FontColor;
+padding: 1.5rem;
+}
+.global-wrapper {
+display: flex;
+background-color: $SectionAsideBakcground;
+max-width: $GlobalWrapperWidth;
+.aside {
+    max-width: 50vw;
+    background-color: red;
+    .filter-title {
+    padding-left: 0.5rem;
+    padding-top: 1rem;
+    font-weight: 600;
     }
-    .template{
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        .hero-section{
-            padding: 2rem;
-            .hero-section-text{
-                font-size: 2.5rem;
-                .accent{
-                    color: $accentWordsColor;
-                }
-            }
-            }
-        }
-        .proj-section{
-            padding: 3rem;
-            .proj-section-title{
-                font-size: 1.3rem;
-    
-            }
-            .proj-section-text{
-                padding-top: 0.3rem;
-                line-height: 2rem;
-                color: $contentColor;
-                font-size: $contentFontSize;
-            }
-        }
-        .gallery-section{
-            display: flex;
-            flex-wrap: wrap;
-            flex:1;
-            justify-content: center;
-            .image{
-                display: flex;
-                flex-direction: column;
-                background-image: url("https://images.unsplash.com/photo-1528255671579-01b9e182ed1d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=749&q=80");
-                background-position: center;
-                background-size: cover;;
-                width: 200px;
-                height: 200px;
-                margin: 2rem;
-            
-            }
-            .image-text{
-                line-height: 1.5rem;
-            }
-            .title{
-                font-weight: 600;
-            }
-            .description{
-                color: $contentColor;
-            }
-        }
+    .filter-tag {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: $FilterBackground;
+    border-radius: 20px;
     }
+}
+.product-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex-direction: column;
+    padding-left: 3.5rem;
+    .product-gallery-title {
+    background-color: green;
+    padding-top: 1rem;
+    /*padding-bottom: 2.5rem;*/
+    font-weight: 600;
+    }
+    .product-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .product-card {
+        max-width: 450px;
+        text-align: left;
+        background-color: blue;
+        padding-top: 3.5rem;
+        padding-right: 3.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .item {
+        width: 150px;
+        height: 150px;
+        background-color: violet;
+    }
+    }
+}
+}
+.footer {
+height: 25vh;
+background-color: $BackgroundFooterHeader;
+}
