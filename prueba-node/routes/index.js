@@ -21,6 +21,26 @@ return res.json(typeMovie);
 
 });
 
+router.get("/movies/:id", (req, res) => {
+
+  const id= req.params.id
+  const idMovie = movies.filter(movie =>
+    movie.id == id ) 
+
+  if (idMovie.length > 0) {
+    return res.json(idMovie[0]);
+
+  } else {
+    return res.sendStatus(404)
+    }
+});
+
+router.post("/contact", (req,res) => {
+  const body =  req.body;
+  consolos.log(body);
+  return res.sendStatus("301");
+});
+
 router.get("/series", (req, res) => {
 
   const typeSeries = movies.filter(movie => 

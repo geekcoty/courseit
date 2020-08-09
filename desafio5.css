@@ -11,11 +11,23 @@
   font-weight: 600;
   font-family: "Roboto", sans-serif;
 }
-
+@media (max-width: 320px) {
+  .title-header {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 .content-wrapper {
   display: flex;
   background-color: #817e7e;
   font-family: "Roboto", sans-serif;
+}
+@media (max-width: 320px) {
+  .content-wrapper {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .content-wrapper .title-aside {
   margin-left: 1rem;
@@ -23,6 +35,16 @@
   padding-top: 0.5rem;
   padding-right: 1rem;
   padding-bottom: 0.5rem;
+}
+@media (max-width: 320px) {
+  .content-wrapper .title-aside {
+    margin-left: 0.2rem;
+  }
+}
+@media (max-width: 320px) {
+  .content-wrapper .filter-aside-group {
+    width: 100%;
+  }
 }
 .content-wrapper .filter-aside-group .filter-aside {
   margin: 1rem 7.5rem 0.5rem 1rem;
@@ -34,31 +56,55 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 320px) {
+  .content-wrapper .filter-aside-group .filter-aside {
+    margin: 0.5rem 3.5rem 0.25rem 0.5rem;
+    width: 95%;
+  }
+}
 
 .title-section {
   margin-left: 1rem;
   font-weight: 600;
   padding-top: 0.5rem;
 }
+@media (max-width: 320px) {
+  .title-section {
+    margin-left: 0.2rem;
+  }
+}
 
 .product-gallery {
   display: flex;
   flex-wrap: wrap;
+}
+@media (max-width: 320px) {
+  .product-gallery {
+    margin: 0.2rem;
+    flex-direction: column;
+    align-content: center;
+  }
 }
 .product-gallery .product-wrapper {
   background-color: white;
   margin: 1rem;
   border-radius: 10px;
 }
+@media (max-width: 320px) {
+  .product-gallery .product-wrapper {
+    margin: 0.2rem;
+  }
+}
 .product-gallery .product-wrapper .product-image {
-  width: 12rem;
-  height: 12rem;
+  width: 17.7rem;
+  height: 17.7rem;
   margin-bottom: 0.5rem;
   border-radius: 10px;
   background-image: url("https://images.unsplash.com/photo-1496747611176-843222e1e57c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=752&q=80");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 }
 .product-gallery .product-wrapper .product-name {
   padding-left: 0.5rem;
@@ -74,15 +120,35 @@
   font-size: 1rem;
   color: #696969;
 }
+@media (max-width: 320px) {
+  .lorem-footer {
+    margin: 0.5rem;
+    text-align: center;
+  }
+}
 
 .title-footer {
   margin: 1rem;
   font-weight: 600;
   font-size: 1.1rem;
 }
+@media (max-width: 320px) {
+  .title-footer {
+    margin: 0.5rem;
+    text-align: center;
+  }
+}
 
 .fab {
   margin-left: 1rem;
+}
+@media (max-width: 320px) {
+  .fab {
+    position: relative;
+    top: 2.5px;
+    left: 100px;
+    bottom: 2.5px;
+  }
 }
 
 /*# sourceMappingURL=desafio5.css.map */
