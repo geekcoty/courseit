@@ -1,9 +1,8 @@
-function numOrStr(value) {
+function reverseString(str) {
+let splitString = str.split("");
+let reverseArray = splitString.reverse();
+let joinString = reverseArray.join("");
 
-  if (typeof value === "number") {
-    return (typeof value)
-  } else if (typeof value === "string") {
-    return(typeof value)
-  }
+return joinString;
 }
 
