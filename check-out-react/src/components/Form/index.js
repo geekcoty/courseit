@@ -54,7 +54,7 @@ class Form extends React.Component {
         <div className="form-subwrapper">
 
         <p className="form-subtitle"> Country</p>
-        <select className="form-input">
+        <select className="form-select">
           <option selected value ="your-country"> Your country...</option>
           <option value ="argentina">Argentina</option>
           <option value ="argentina">Uruguay</option>
@@ -63,16 +63,16 @@ class Form extends React.Component {
         </select>
         <p className="form-subtitle"> Postal code</p>
         <input
-          className="form-input"
+          className="form-subwrapper-input"
           type="text"
-          name="phone"
+          name="postal"
           placeholder="Your postal code..."/>
         </div>
         <input className="form-checkbox"
         type="checkbox"/><span>
           Save this information for next time
         </span>
-        <button> Submit </button>
+        <button className="form-button"> Submit </button>
       </div>
     );
   }
