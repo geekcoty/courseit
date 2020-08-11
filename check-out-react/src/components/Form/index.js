@@ -59,23 +59,31 @@ class Form extends React.Component {
                 {" "}
                 Your country...
               </option>
-              <option className="select-option" value="argentina">Argentina</option>
-              <option className="select-option" value="argentina">Uruguay</option>
-              <option className="select-option" value="argentina">Paraguay</option>
-              <option className="select-option" value="argentina">Chile</option>
+              <option className="select-option" value="argentina">
+                Argentina
+              </option>
+              <option className="select-option" value="argentina">
+                Uruguay
+              </option>
+              <option className="select-option" value="argentina">
+                Paraguay
+              </option>
+              <option className="select-option" value="argentina">
+                Chile
+              </option>
             </select>
           </div>
           <div className="form-subwrapper-postalcode">
-          <p className="form-subtitle"> Postal code</p>
-          <input
-            className="form-subwrapper-input"
-            type="text"
-            name="postal"
-            placeholder="Your postal code..."
-          />
+            <p className="form-subtitle"> Postal code</p>
+            <input
+              className="form-subwrapper-input"
+              type="text"
+              name="postal"
+              placeholder="Your postal code..."
+            />
           </div>
         </div>
-        <div className="form-checkbox"> 
+        <div className="form-checkbox">
           <input className="form-checkbox" type="checkbox" />
           <span>Save this information for next time</span>
         </div>
