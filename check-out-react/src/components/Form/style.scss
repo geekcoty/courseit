@@ -24,7 +24,7 @@
      width: 15rem;
      height: 3rem;
      border: 0px;
-     border-radius: 10px;
+     border-radius: 5px;
      margin: 0.5rem;
      text-align: right;
     
@@ -36,6 +36,8 @@
   border: 0;
   border-radius: 5px;
   align-self: flex-end;
+  background-color: red;
+  color:white;
   }
   .form-subwrapper {
     display: flex;

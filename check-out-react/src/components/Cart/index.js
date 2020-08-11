@@ -11,9 +11,11 @@ class Cart extends React.Component{
     return (
       
       <div className="item-wrapper">
-        <Item />
-        <Item />
-        <Sum />
+        <div className="item-subwrapper">
+          <Item />
+          <Item />
+          <Sum />
+        </div>
       </div>
 
     )
