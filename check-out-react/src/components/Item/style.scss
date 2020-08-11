@@ -1,8 +1,9 @@
 .indiv-item-wrapper{
-  .indiv-item{
+  display:flex;
   font-weight: 800;
+  justify-content: space-evenly;
+  .indiv-item{
+  padding-left: 0.5rem;
   }
-  .indiv-item-img{
 
-  }
 }
