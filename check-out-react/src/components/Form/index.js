@@ -1,12 +1,12 @@
 import React from "react";
 
-import "./style.css";
-
+import "./style.scss";
 
 class Form extends React.Component {
-  render (){
+  render() {
     return (
       <div className="form-wrapper">
+        <p className="app-title"> Checkout</p>
         <p className="form-title"> Contact information</p>
 
         <p className="form-subtitle"> E-mail</p>
@@ -52,31 +52,37 @@ class Form extends React.Component {
         />
 
         <div className="form-subwrapper">
-
-        <p className="form-subtitle"> Country</p>
-        <select className="form-select">
-          <option selected value ="your-country"> Your country...</option>
-          <option value ="argentina">Argentina</option>
-          <option value ="argentina">Uruguay</option>
-          <option value ="argentina">Paraguay</option>
-          <option value ="argentina">Chile</option>
-        </select>
-        <p className="form-subtitle"> Postal code</p>
-        <input
-          className="form-subwrapper-input"
-          type="text"
-          name="postal"
-          placeholder="Your postal code..."/>
+          <div className="form-subwrapper-select">
+            <p className="form-subtitle"> Country</p>
+            <select className="form-select">
+              <option className="select-option" selected value="your-country">
+                {" "}
+                Your country...
+              </option>
+              <option className="select-option" value="argentina">Argentina</option>
+              <option className="select-option" value="argentina">Uruguay</option>
+              <option className="select-option" value="argentina">Paraguay</option>
+              <option className="select-option" value="argentina">Chile</option>
+            </select>
+          </div>
+          <div className="form-subwrapper-postalcode">
+          <p className="form-subtitle"> Postal code</p>
+          <input
+            className="form-subwrapper-input"
+            type="text"
+            name="postal"
+            placeholder="Your postal code..."
+          />
+          </div>
         </div>
-        <input className="form-checkbox"
-        type="checkbox"/><span>
-          Save this information for next time
-        </span>
+        <div className="form-checkbox"> 
+          <input className="form-checkbox" type="checkbox" />
+          <span>Save this information for next time</span>
+        </div>
         <button className="form-button"> Submit </button>
       </div>
     );
   }
 }
-
 
 export default Form;

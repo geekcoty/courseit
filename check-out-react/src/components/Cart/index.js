@@ -3,6 +3,8 @@ import React from "react";
 import Item from "../Item";
 import Sum from "../Sum";
 
+import "./style.scss";
+
 
 class Cart extends React.Component{
   render (){

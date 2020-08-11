@@ -1,15 +1,13 @@
 import React from 'react';
 
+import "./App.scss";
 import Form from "./components/Form";
 import Cart from "./components/Cart";
-
-import './App.css';
 
 function App() {
   return (
 
-    <div>
-
+    <div className="content-wrapper">
       <Form />
       <Cart />
     </div>
