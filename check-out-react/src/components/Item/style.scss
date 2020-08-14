@@ -3,7 +3,11 @@
   font-weight: 800;
   justify-content: space-evenly;
   .indiv-item-img{
-    width: 10rem
+    padding-left: 0.5rem;
+    .item-img{
+      width: 10rem;
+      height: 10rem;
+    }
   }
   .indiv-item{
   padding-left: 0.5rem;
