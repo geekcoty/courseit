@@ -2,7 +2,7 @@
   {
     "name": "Nikon Camera",
     "price": "USD 1000,00",
-    "image" : "https://postimg.cc/v4wsTGsp",
+    "image" : "https://i.postimg.cc/3J9dSV89/canon1.jpg",
     "qty": "1"
   }
 ,
@@ -10,30 +10,30 @@
     "name": "Nikon Lens",
     "price": "USD 100,00",
     "qty": "1",
-    "image": "https://postimg.cc/kVnPNwDs"
+    "image": "https://i.postimg.cc/brgN5Shd/canon2.jpg"
   },
     {
       "name": "Nikon Camera",
       "price": "USD 1000,00",
-      "image": "https://postimg.cc/crgx6D88",
+      "image": "https://i.postimg.cc/6Q4qQQd1/canon3.jpg",
       "qty": "1"
     },
     {
       "name": "Nikon Lens",
       "price": "USD 100,00",
       "qty": "1",
-      "image": "https://postimg.cc/kVnPNwDs"
+      "image": "https://i.postimg.cc/YqkfJ51W/canon4.jpg"
     },
       {
         "name": "Camera",
         "price": "USD 1000,00",
-        "image": "https://postimg.cc/GTBC8291",
+        "image": "https://i.postimg.cc/TPb2646z/canon5.jpg",
         "qty": "1"
       },
       {
         "name": "Nikon Lens",
         "price": "USD 100,00",
         "qty": "1",
-        "image": "https://postimg.cc/LqR2C2Qz"
+        "image": "https://i.postimg.cc/nhCcdLwc/canon6.jpg"
       }
 ]

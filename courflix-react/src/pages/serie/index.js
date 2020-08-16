@@ -1,7 +1,8 @@
 import React from "react"
+import "../serie/style.scss"
 
 
-class SeriesPage extends React.Component {
+class Serie extends React.Component {
   render (){
 
   return (
@@ -10,4 +11,4 @@ class SeriesPage extends React.Component {
   }
 }
 
-export default SeriesPage
+export default Serie

@@ -1,64 +1,65 @@
 import React from 'react';
 
-/*import "./App.scss";*/
-import Form from "./components/Form";
-import Cart from "./components/Cart";
 import Slider from "react-slick";
-import products from "../src/data/products.json";
+import {Link} from "react-router-dom"; 
 
+import products from "../src/data/products.json";
+import "./App.scss";
 class App extends React.Component {
 
 constructor(props){
   super(props);
 
   this.settings = {
-    slidesToShow: 4,
-    slidesToScroll:1,
-    infinite:true,
+    slidesToShow: 3,
+    slidesToScroll:2,
+    infinite:false,
+    arrows:true
   }
 }
 
   render () {
   return (
-    <div className="content-wrapper">
-      <Slider {...this.settings}>
+    <div className="slider-wrapper">
+      <Slider {...this.settings} className="slider-content">
         <div>
-          <img src="https://i.postimg.cc/KvMHQDcq/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
+          <img src="https://i.postimg.cc/3J9dSV89/canon1.jpg" />
+        </div>
+
+        <div>
+          <img src="https://i.postimg.cc/3J9dSV89/canon1.jpg" />
+        </div>
+
+        <div>
+          <img src="https://i.postimg.cc/3J9dSV89/canon1.jpg" />
+        </div>
+
+        <div>
+          <img src="https://i.postimg.cc/3J9dSV89/canon1.jpg" />
+        </div>
+
+        <div>
+          <img src="https://i.postimg.cc/3J9dSV89/canon1.jpg" />
+        </div>
+
+        <div>
+          <img src="https://i.postimg.cc/3J9dSV89/canon1.jpg" />
         </div>
         <div>
-          <img src="https://i.postimg.cc/KvMHQDcq/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
+          <img src="https://i.postimg.cc/3J9dSV89/canon1.jpg" />
         </div>
         <div>
-          <img src="https://i.postimg.cc/KvMHQDcq/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
+          <img src="https://i.postimg.cc/3J9dSV89/canon1.jpg" />
         </div>
         <div>
-          <img src="https://i.postimg.cc/KvMHQDcq/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
+          <img src="https://i.postimg.cc/3J9dSV89/canon1.jpg"/>
         </div>
         <div>
-          <img src="https://i.postimg.cc/KvMHQDcq/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
-        </div>
-        <div>
-          <img src="https://i.postimg.cc/KvMHQDcq/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
-        </div>
-        <div>
-          <img src="https://i.postimg.cc/KvMHQDcq/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
-        </div>
-        <div>
-          <img src="https://i.postimg.cc/KvMHQDcq/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
-        </div>
-        <div>
-          <img src="https://i.postimg.cc/KvMHQDcq/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
-        </div>
-        <div>
-          <img src="https://i.postimg.cc/RFZ7847C/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
-        </div>
-        <div>
-          <img src="https://i.postimg.cc/RFZ7847C/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
-        </div>
-        <div>
-          <img src="https://i.postimg.cc/RFZ7847C/markus-spiske-i6sa-CH0-Iod-E-unsplash.jpg" />
+          <img src="https://i.postimg.cc/3J9dSV89/canon1.jpg"/>
         </div>
       </Slider>
+
+      <Link to ="/checkout"> Pagar </Link>
     </div>
   );
 }
