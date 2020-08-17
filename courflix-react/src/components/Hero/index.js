@@ -6,7 +6,9 @@ class Hero extends React.Component {
   render (){
     return (
       
-      <p> LET ME BE YOUR HERO, BABY</p>
+      <div className="hero-wrapper">
+        <p> LET ME BE YOUR HERO BABY</p>
+      </div>
 
 
 
