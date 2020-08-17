@@ -1,0 +1,28 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.navbar-wrapper{
+  display: flex;
+  justify-content: flex-start;
+  height: 7.5vh;
+  background-color: grey;
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+  align-items: center;
+  padding-top: 0.5rem;
+  position: sticky;
+  .navbar-logo{
+    margin-left: 5.5rem;
+  }
+  .navbar-menu{
+     margin-left: 10.5rem;
+    .navbar-item{
+      margin: 1rem;
+    }
+  }
+}

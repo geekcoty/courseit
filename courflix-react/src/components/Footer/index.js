@@ -7,7 +7,11 @@ class Footer extends React.Component {
     return (
 
       <div className="footer-wrapper">
-        <p> Soy un footer</p>
+        <span className="credit">
+
+          Made with LAV by <a href="#">Coty</a>
+
+        </span>
 
       </div>
 
