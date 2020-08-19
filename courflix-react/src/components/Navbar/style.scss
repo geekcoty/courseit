@@ -1,26 +1,49 @@
+$mobileBreakpoint:  480px;
+$tabletBreakpoint:  768px;
+$smartdeviceBreakpoint: 968px;
+$regularBreakpoint: 1024px;
+
+$fontColor: white;
+$visitedLink: white;
+$hoverLink: grey;
+
 *,
 *:after,
 *:before {
   box-sizing: border-box;
   margin: 0;
+ 
 }
 
 .navbar-wrapper{
+  height: 7.5vh;
+  padding-top: 0.5rem;
+  position: sticky;
   display: flex;
   justify-content: flex-start;
-  height: 7.5vh;
-  background-color: grey;
+  align-items: center;
   color: white;
   font-weight: 800;
   font-size: 1.5rem;
-  align-items: center;
-  padding-top: 0.5rem;
-  position: sticky;
+  
   .navbar-logo{
     margin-left: 5.5rem;
   }
   .navbar-menu{
      margin-left: 10.5rem;
+    .link{
+      text-decoration: none;
+      color:$fontColor;
+    
+      &:hover {
+        color:$hoverLink;
+      }
+      &:visited {
+        color:$visitedLink;
+      }
+
+      }
+    
     .navbar-item{
       margin: 1rem;
     }

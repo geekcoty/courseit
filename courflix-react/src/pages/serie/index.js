@@ -1,5 +1,5 @@
 import React from "react";
-import "../movie/style.scss";
+import "../serie/style.scss";
 import NavBar from "../../components/Navbar";
 import Hero from "../../components/Hero";
 import Footer from "../../components/Footer";
@@ -7,7 +7,7 @@ import Footer from "../../components/Footer";
 class Serie extends React.Component {
   render() {
     return (
-      <div className="movie-wrapper">
+      <div className="serie-wrapper">
         <NavBar />
         <Hero />
         <p> Seleccion de serie</p>

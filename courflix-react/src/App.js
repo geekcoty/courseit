@@ -5,19 +5,22 @@ import Hero from "./components/Hero";
 import Carrousel from "./components/Carrousel";
 import Footer from "./components/Footer";
 
-function App () {
+import "./App.scss";
 
+class App  extends React.Component {
+render () {
     return (
+      <div className="app-wrapper">
 
-    <React.Fragment>
+        <Navbar />
+        <Hero />
+        <Carrousel />
+        <Footer />
 
-      <Navbar />
-      <Hero />
-      <Carrousel /> 
-      <Footer />
-
-    </React.Fragment>
-    )
+      </div>
+    );
   }
+}
+
 
 export default App;
