@@ -5,15 +5,8 @@ $regularBreakpoint: 1024px;
 
 $fontColor: white;
 $visitedLink: white;
-$hoverLink: grey;
+$hoverLink: red;
 
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-  margin: 0;
- 
-}
 
 .navbar-wrapper{
   height: 7.5vh;

@@ -10,13 +10,7 @@ $fontColor: white;
 $visitedLink: white;
 $hoverLink: grey;
 
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-  margin: 0;
-}
-
 .slick-wrapper{
-  background-color: forestgreen;
+
+  color: $fontColor;
 }

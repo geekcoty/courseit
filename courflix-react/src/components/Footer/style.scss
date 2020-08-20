@@ -1,18 +1,32 @@
-*,
-*:after,
-*:before {
-  box-sizing: border-box;
-  margin: 0;
-}
+$mobileBreakpoint:  480px;
+$tabletBreakpoint:  768px;
+$smartdeviceBreakpoint: 968px;
+$regularBreakpoint: 1024px;
+
+$fontColor: white;
+$visitedLink: white;
+$hoverLink: red;
 
 .footer-wrapper{
   display: flex;
-  justify-content: space-around;
   height: 7.5vh;
+  padding-top: 0.5rem;
   background-color: black;
-  color: white;
+  
+  justify-content: space-around;
+  align-items: center;
+  
+  color: $fontColor;
   font-weight: 800;
   font-size: 1.5rem;
-  align-items: center;
-  padding-top: 0.5rem;
+  
+  .twitter-handle{
+    text-decoration: none;
+    &:hover{
+      color: $hoverLink;
+    }
+    &:visited{
+      color: $visitedLink;
+    }
+  }  
 }
