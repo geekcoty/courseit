@@ -1,17 +1,17 @@
 import React from "react"
-import "../movie/style.scss"
+import "../ContentPage/style.scss"
 import NavBar from "../../components/Navbar"
 import Hero from "../../components/Hero"
 import Footer from "../../components/Footer"
 
 
-class Movie extends React.Component{
+class ContentPage extends React.Component{
   render(){
     return (
-      <div className="movie-wrapper">
+      <div className="content-wrapper">
       <NavBar/>
       <Hero/>
-      <p> Seleccion de pelicula</p>
+      <p> Soy la content page</p>
       <Footer/>
       </div>
     )
@@ -19,4 +19,4 @@ class Movie extends React.Component{
 }
 
 
-export default Movie;
+export default ContentPage;

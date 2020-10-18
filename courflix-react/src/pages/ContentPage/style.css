@@ -6,8 +6,9 @@
   margin: 0;
 }
 
-.app-wrapper {
+.content-wrapper {
   background-color: black;
   min-height: 100vh;
+  color: white;
 }
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=style.css.map */

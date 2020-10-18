@@ -1,0 +1,29 @@
+.footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 7.5vh;
+  padding-top: 0.5rem;
+  background-color: black;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.footer-wrapper .twitter-handle {
+  text-decoration: none;
+}
+
+.footer-wrapper .twitter-handle:hover {
+  color: red;
+}
+
+.footer-wrapper .twitter-handle:visited {
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

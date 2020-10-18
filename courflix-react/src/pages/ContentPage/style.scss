@@ -1,5 +1,3 @@
-$fontColor: white;
-$playButtonColor: #ED0A1D;
 $buttonColor:rgba(157, 151, 151, 0.5415);
 $mobileBreakpoint:  480px;
 $tabletBreakpoint:  768px;
@@ -8,11 +6,17 @@ $regularBreakpoint: 1024px;
 
 $fontColor: white;
 $visitedLink: white;
-$hoverLink: grey;
+$hoverLink: red;
 
 *,
 *:after,
 *:before {
   box-sizing: border-box;
   margin: 0;
+}
+
+.content-wrapper{
+ background-color: black;
+ min-height: 100vh;
+ color: $fontColor;
 }
