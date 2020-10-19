@@ -1,13 +1,13 @@
 import React from "react";
-import "./style.scss";
-
+import "./style.css"
 
 class Hero extends React.Component {
-  render()
-            {
+  
+
+  render() {
+    console.log(this.props);
     return (
-      <div className="hero-wrapper">
-        <p> hola</p>
+      <div className="hero-wrapper" style={this.props.style}>
       </div>
     );
   }

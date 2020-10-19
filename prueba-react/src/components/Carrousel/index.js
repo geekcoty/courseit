@@ -9,7 +9,7 @@ class Carrousel extends React.Component {
  return (
    <div className="wrapper">
    <Title title={this.props.title}/>
-   <InnerCarrousel />
+   <InnerCarrousel items={this.props.items}/>
    </div> 
  )
   }

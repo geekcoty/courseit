@@ -4,7 +4,9 @@ import "./style.css"
 class Card extends React.Component {
   render (){
     return (
-      <p> Soy una Card</p>
+      <div>
+        {this.props.item.title}
+      </div>
     )
   }
 }
