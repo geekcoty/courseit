@@ -1,11 +1,15 @@
 import React from "react";
+import Title from "../Title";
+import InnerCarrousel from "../InnerCarrousel";
+import "./style.css";
 
 class Carrousel extends React.Component {
   render () {
     console.log(this.props)
  return (
    <div className="wrapper">
-    <p> {this.props.title}</p>
+   <Title />
+   <InnerCarrousel />
    </div> 
  )
   }

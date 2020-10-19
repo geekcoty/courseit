@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css"
 
 class Card extends React.Component {
   render (){
@@ -7,3 +8,4 @@ class Card extends React.Component {
     )
   }
 }
+export default Card;
