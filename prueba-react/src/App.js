@@ -5,10 +5,9 @@ import './App.css';
 class App extends React.Component {
   render (){
   return (
-
     <div className="carr-wrapper">
-      <Carrousel  title="Basado en tu ultima visita"/>
-      <Carrousel Secondtitle="Ofertas" />
+      <Carrousel title="Basado en tu ultima visita" />
+      <Carrousel title="Basado en tu ultima visita" />
     </div>
   );
 }
