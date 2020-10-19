@@ -16,7 +16,7 @@ render () {
       <div className="app-wrapper">
         <Navbar />
         <Hero
-          Content={courflix[0].series[15]}
+          content={courflix[0].series[15]}
           style={{
             backgroundImage:
               `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${courflix[0].series[15].cover})`,
