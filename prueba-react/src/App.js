@@ -5,8 +5,8 @@ class App extends React.Component {
   render (){
   return (
     <div className="carr-wrapper">
-      <Carrousel/>
-      <Carrousel/>
+      <Carrousel title="Basado en tu ultima visita"/>
+      <Carrousel title ="Ofertas"/>
     </div>
   );
 }
