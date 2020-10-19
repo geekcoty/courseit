@@ -8,7 +8,7 @@ class App extends React.Component {
 
     <div className="carr-wrapper">
       <Carrousel  title="Basado en tu ultima visita"/>
-      <Carrousel title="Basado en tu ultima visita" />
+      <Carrousel Secondtitle="Ofertas" />
     </div>
   );
 }

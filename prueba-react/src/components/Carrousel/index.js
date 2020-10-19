@@ -3,7 +3,12 @@ import React from "react";
 class Carrousel extends React.Component {
   render () {
  return (
-    <p> Soy un Carrousel </p>
+   <div className="wrapper">
+    <p> {this.props.title}</p>
+    <p> {this.props.title}</p>
+
+
+   </div> 
  )
   }
 }
