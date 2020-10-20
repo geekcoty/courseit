@@ -12,12 +12,22 @@ class Card extends React.Component {
     };
   }
 
-    //actualizamos el estado con una acción de un usuario (click del usuario)
+    //actualizamos el estado con una acción de un usuario (click del usuario) con la funcion
+    // this.setState({
+    // saraza: "valor de saraza"})
+    
    handleClick(){
-    this.setState ({
-      //propiedades a modificar
-      like: "me gusta"
-    })
+      //propiedades a modificar con una condición
+      if (this.state.like ==="me gusta") {
+        this.setState ({
+          like: "no me gusta"
+        }) 
+      } else {
+        this.setState ({
+          like: "me gusta"
+        })
+      }
+
    }
 
   render() {
