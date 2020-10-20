@@ -10,8 +10,7 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 ReactDOM.render(
   <Router>
     <Route exact path="/" component={App} />
-    <Route exact path="/serie/id" component= {ContentPage} />
-    <Route exact path="/movie/id" component= {ContentPage} />
+    <Route exact path="/content/" component= {ContentPage} />
 
   </Router>
   ,

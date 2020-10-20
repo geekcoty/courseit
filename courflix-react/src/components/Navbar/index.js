@@ -20,11 +20,11 @@ class NavBar extends React.Component {
             <span className="navbar-item">Home</span>
           </Link>
 
-          <Link to="/serie" className="link">
+          <Link to="/content/" className="link">
             <span className="navbar-item">Series</span>
           </Link>
 
-          <Link to="/movie" className="link">
+          <Link to="/content/" className="link">
             <span className="navbar-item">Movies</span>
           </Link>
 

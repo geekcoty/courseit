@@ -1,9 +1,11 @@
 import React from "react"
-import "../ContentPage/style.scss"
+
 import NavBar from "../../components/Navbar"
 import Hero from "../../components/Hero"
 import Footer from "../../components/Footer"
 
+import courflix from "../../data/courflix.json"
+import "../ContentPage/style.scss";
 
 class ContentPage extends React.Component{
   render(){

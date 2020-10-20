@@ -17,11 +17,12 @@ class Hero extends React.Component {
 handleClickUp () {
   if (this.state.up === "iconStyle") {
   this.setState ({
-    up: "iconStyle up"
+    up: "iconStyle up",  
+    down: "iconStyle"
   })
 } else {
   this.setState({
-    up: "iconStyle"
+    up: "iconStyle",
   })
 }
 }
