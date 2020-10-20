@@ -8,6 +8,7 @@ class InnerCarrousel extends React.Component {
     super(props);
     console.log("soy el innercarrousel");
     this.state = {
+      
     };
   }
   render() {
