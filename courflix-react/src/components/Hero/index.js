@@ -40,7 +40,7 @@ handelClickDown () {
 
   render() {
     
-    const { name, rating, synopsis, year } = this.props.content;
+    const { name, rating, synopsis, year, seasons } = this.props.content;
     const {up,down} = this.state;
 
     return (
@@ -50,6 +50,7 @@ handelClickDown () {
           <div className="content-details">
             <p className="year">{year}</p>
             <p className="rating">{rating}</p>
+            <p className="seasons"> {seasons}</p>
           </div>
           <div className="hero-synopsis">
             <p className="synopsis">{synopsis}</p>

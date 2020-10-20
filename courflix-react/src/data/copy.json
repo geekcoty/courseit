@@ -156,8 +156,7 @@
 	"thumbnail":"https://i.postimg.cc/hGYDLSHY/bojack1.jpg",
 	"id":"2",
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"The BoJack Horseman Story, Chapter One",
@@ -243,8 +242,7 @@
 	"thumbnail":"https://i.postimg.cc/8PTSrJ75/buffy1.jpg",
 	"id":"3",
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"Welcome to the Hellmouth",
@@ -330,7 +328,6 @@
 	"thumbnail":"https://i.postimg.cc/wBmPrg1Z/doctor4.jpg",
 	"id":"4",
 	"type": "serie",
-	"seasons" : "1 season",
 	"episodes": [{
 		"season1":[
 			{
@@ -425,8 +422,7 @@
 	"thumbnail":"https://i.postimg.cc/7PmBmfBb/firefly1.jpg",
 	"id":5,
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"The Train Job",
@@ -524,8 +520,7 @@
 	"thumbnail":"https://i.postimg.cc/zfC7WBbz/fma2.jpg",
 	"id":"6",
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"Fullmetal Alchemist",
@@ -619,8 +614,7 @@
 	"thumbnail":"https://i.postimg.cc/4dw1LSQj/galavant1.jpg",
 	"id":7,
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"Pilot",
@@ -681,8 +675,7 @@
 	"thumbnail":"https://i.postimg.cc/ht9TZYSM/go2.jpg",
 	"id":8,
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"In the Beginning",
@@ -733,8 +726,7 @@
 	"thumbnail":"https://i.postimg.cc/WpCZNVzX/how1.jpg",
 	"id":7,
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"Pilot",
@@ -880,8 +872,7 @@
 	"thumbnail":"https://i.postimg.cc/nhY9GQkP/izombie3.jpg",
 	"id":8,
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"Pilot",
@@ -973,8 +964,7 @@
 	"thumbnail":"https://i.postimg.cc/nz5XhKFC/themagicians1.jpg",
 	"id":9,
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"Unauthorized Magic",
@@ -1066,8 +1056,7 @@
 	"thumbnail":"https://i.postimg.cc/MH7QTs9d/parks3.jpg",
 	"id":10,
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"Pilot",
@@ -1118,8 +1107,7 @@
 	"thumbnail":"https://i.postimg.cc/L5pJrtmf/robo1.jpg",
 	"id":11,
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"Boobytrap",
@@ -1217,8 +1205,7 @@
 	"thumbnail":"https://i.postimg.cc/d36VpgHP/ss1.png",
 	"id":11,
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"Revive! Legendary Hero",
@@ -1316,8 +1303,7 @@
 	"thumbnail": "https://i.postimg.cc/HkVkvZbR/trek2.jpg",
 	"id":12,
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"The Vulcan Hello",
@@ -1415,13 +1401,12 @@
 	"name":"Veronica Mars",
 	"synopsis":"In the fictional town of Neptune, California, student Veronica Mars progresses from high school to college while moonlighting as a private investigator under the tutelage of her detective father.",
 	"year": 2004,
-	"rating": "TV-14",
+	"rating":"TV-14",
 	"cover":"https://i.postimg.cc/fRdfhD6S/vmarscover.jpg",
 	"thumbnail":"https://i.postimg.cc/TPvvjC0r/vmars1.png",
 	"id":13,
 	"type": "serie",
-	"seasons" : "1 season",
-	"episodes": [{
+		"episodes": [{
 		"season1":[
 			{
 		"episode-title":"Pilot",
