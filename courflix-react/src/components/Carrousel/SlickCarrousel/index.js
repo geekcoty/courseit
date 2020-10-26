@@ -9,11 +9,19 @@ class SlickCarrousel extends React.Component {
   
 
   render (){
-
+    console.log(this.props.pelis)
     return (
       <div className="slick-wrapper">
         <div className="series-slick"></div>
-        <Thumbnail/>
+        {this.props.pelis.map((peli,key) => {
+          return (
+            <React.Fragment>
+              <Thumbnail peli={peli} key={key} />
+            </React.Fragment>
+          );
+        })
+        }
+
       </div>
     );
   }

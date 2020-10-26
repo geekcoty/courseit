@@ -11,7 +11,7 @@ class Carrousel extends React.Component {
     return (
       <div className="carrousel-wrapper">
         <Title title={this.props.title}/>
-        <SlickCarrousel pelis={pelis}/>
+        <SlickCarrousel pelis={this.props.pelis}/>
       </div>
     );
   }
