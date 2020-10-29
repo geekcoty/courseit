@@ -5,6 +5,7 @@ import Hero from "../../components/Hero"
 import Footer from "../../components/Footer"
 
 import "../ContentPage/style.scss";
+import courflix from "../../data/courflix.json"
 
 class ContentPage extends React.Component{
   render(){
