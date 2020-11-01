@@ -24,6 +24,7 @@ class App extends React.Component {
     })
   }
   render () {
+    const {result} = this.state
   return (
     <div className="App">
       <input name= "firstNum" type="text" onChange = {(e) => this.handleChange(e)}/>
@@ -31,7 +32,7 @@ class App extends React.Component {
 
       <button onClick ={() => this.handleSum()}> sumar </button>
 
-      <p> El resultado es : {this.state.result}</p>
+      <p> El resultado es : {result}</p>
   
     </div>
   )
