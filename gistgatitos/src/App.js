@@ -1,9 +1,15 @@
 import React from "react"
-
-import './App.css';
-
 class App extends React.Component {
+  constructor(props) {
+    super(props);
+console.log ("soy un constructor")
+  }
+  componentDidMount() {
+    console.log("soy un componentDidMount")
+  }
+  
   render () {
+    console.log("soy un render")
   return (
     <div className="App">
      <p> Hola </p>
