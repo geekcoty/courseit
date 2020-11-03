@@ -12,6 +12,7 @@ class App extends  React.Component {
   }
 }
   async componentDidMount () {
+  
 
     const meliFetch = await fetch(
       "https://api.mercadolibre.com/sites/MLA/search?q=BUSQUEDA&limit=4"
