@@ -1,5 +1,5 @@
 import React from "react";
-import Carrousel from "./components/Carrousel";
+import Carousel from "./components/Carousel";
 
 class App extends React.Component {
   constructor(props) {
@@ -34,8 +34,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
-  
-        <Carrousel
+        <input type="text" onChange={(e) => this.handleChange(e)} />
+        <button onClick={() => this.handleClick()}>Buscar</button>
+        <Carousel
           title={this.state.inputValue}
           products={this.state.products}
         />
