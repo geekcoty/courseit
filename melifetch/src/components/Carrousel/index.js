@@ -1,20 +1,14 @@
 import React from "react";
-
+import InnerCarrousel from "./InnerCarrousel"
 
 class Carrousel extends React.Component {
   render() {
+    console.log(this.props.products)
     return (
     
         <div className="App">
-          {this.props.items.map((item) => {
-            return (
-              <div>
-                <p> {item.thumbnail}</p>
-                <p> {item.title}</p>
-                <p> {item.price}</p>
-              </div>
-            );
-          })}
+          <h2> Products </h2>
+          <InnerCarrousel products={this.props.products} />
         </div>
     );
   }

@@ -7,11 +7,10 @@ class App extends  React.Component {
     constructor(props) {
     super(props);
     this.state = {
-     infoMeli: []
-
+     products: []
   }
 }
-  async componentDidMount () {
+  async componentDidMount() {
   
 
     const meliFetch = await fetch(
@@ -19,19 +18,23 @@ class App extends  React.Component {
     );
 
     const meliFetchResults = await meliFetch.json();
-  
-    this.setState =({
-    infoMeli: meliFetchResults.results
-    })
+      
+this.setState({
+  products: meliFetchResults.results
+})
   }
   render () {
-  return (
-    <div className="App">
-      <Navbar />
-      <Carrousel  items={this.state.infoMeli}/>
-    </div>
-  );
-}
+  
+    //thumbnail
+    //title
+    //price
+    return (
+      <div className="App">
+        <Navbar />
+        <Carrousel products={this.state.products} />
+      </div>
+    );
+  }
 }
 
 export default App;

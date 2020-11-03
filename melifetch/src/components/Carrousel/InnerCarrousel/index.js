@@ -1,9 +1,20 @@
 import React from "react";
+import Card from "./Card";
 
 
 class InnerCarrousel extends React.Component {
   render() {
-    return
+    console.log(this.props.products);
+    return (
+    <div>
+      {this.props.products.map( (product, key) => {
+        return (
+          <Card key= {key} product ={product} />
+        )
+
+      })}
+    </div>
+    )
   }
 }
 
