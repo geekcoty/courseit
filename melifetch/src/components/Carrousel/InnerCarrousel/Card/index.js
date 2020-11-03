@@ -6,9 +6,9 @@ class Card extends React.Component {
   render() {
     return (
       <div className="productos">
-        <img src={this.props.product.thumbnail} alt="imagen del producto" />
-        <p> Nombre: {this.props.product.title}</p>
-        <p> Precio: {this.props.product.price}</p>
+        <img src={this.props.item.thumbnail} alt="imagen del producto" />
+        <p> Nombre: {this.props.item.title}</p>
+        <p> Precio: {this.props.item.price}</p>
       </div>
     );
   }

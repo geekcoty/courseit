@@ -1,37 +1,44 @@
-import React from "react"
-import Navbar from "./components/Navbar"
-import Carrousel from "./components/Carrousel"
+import React from "react";
+import Carrousel from "./components/Carrousel";
 
-
-class App extends  React.Component {
-    constructor(props) {
+class App extends React.Component {
+  constructor(props) {
     super(props);
+
     this.state = {
-     products: []
+      products: [],
+      inputValue: "",
+    };
   }
-}
-  async componentDidMount() {
-  
 
-    const meliFetch = await fetch(
-      "https://api.mercadolibre.com/sites/MLA/search?q=BUSQUEDA&limit=4"
+  handleChange(e) {
+    this.setState({
+      inputValue: e.target.value,
+    });
+  }
+
+  async handleClick() {
+    const searchValue = this.state.inputValue;
+    const getCarouselData = await fetch(
+      `https://api.mercadolibre.com/sites/MLA/search?q=${searchValue}&limit=5`
     );
+    const getCarouselDataJson = await getCarouselData.json();
 
-    const meliFetchResults = await meliFetch.json();
-      
-this.setState({
-  products: meliFetchResults.results
-})
+    console.log(getCarouselDataJson);
+
+    this.setState({
+      products: getCarouselDataJson.results,
+    });
   }
-  render () {
-  
-    //thumbnail
-    //title
-    //price
+
+  render() {
     return (
-      <div className="App">
-        <Navbar />
-        <Carrousel products={this.state.products} />
+      <div>
+  
+        <Carrousel
+          title={this.state.inputValue}
+          products={this.state.products}
+        />
       </div>
     );
   }
