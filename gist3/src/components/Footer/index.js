@@ -1,11 +1,13 @@
 import React from "react"
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../Footer/style.css"
 
 class Footer extends React.Component {
   render (){
     return (
 
-      <p className="credit"> {`Made with <3 by Coty`}</p>
+      <p className="credit"> Made with <FontAwesomeIcon icon= {faHeart} /> by Coty </p>
     )
   }
 }

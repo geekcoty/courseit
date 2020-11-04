@@ -5,7 +5,6 @@ import CardWrapper from "../src/components/CardWrapper"
 
 import "./App.css"
 
-// Gist 3: Recrear la imagen de Cards.jpg
 class App extends React.Component {
  render (){
 
