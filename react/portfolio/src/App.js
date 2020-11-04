@@ -7,7 +7,9 @@ import Autocomplete from "./components/Autocomplete";
 
 class App extends React.Component {
   handleCallback(newValue) {
-    console.log(newValue)
+    this.setState({
+      autocompleteValue: newValue
+    })
   }
   constructor(props) {
     super(props);
@@ -15,7 +17,8 @@ class App extends React.Component {
       name: "",
       userPic: "",
       bio: "",
-      repos: []
+      repos: [],
+      autocompleteValue:""
     };
   }
 
@@ -43,6 +46,7 @@ class App extends React.Component {
         <img src={userPic} className="userPic" />
         <p> {bio}</p>
         <Autocomplete handleCallback={(newValue) => this.handleCallback(newValue)}/>
+        <p> Buscaste: {this.state.autocompleteValue}</p>
         <Projects repos={repos} />
       </div>
     );
