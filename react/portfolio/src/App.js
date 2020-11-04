@@ -3,8 +3,12 @@ import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
 import axios from "axios"
 import './App.css';
+import Autocomplete from "./components/Autocomplete";
 
 class App extends React.Component {
+  handleCallback(newValue) {
+    console.log(newValue)
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -35,8 +39,10 @@ class App extends React.Component {
     return (
       <div className="App">
         <Navbar name={name} />
+
         <img src={userPic} className="userPic" />
         <p> {bio}</p>
+        <Autocomplete handleCallback={(newValue) => this.handleCallback(newValue)}/>
         <Projects repos={repos} />
       </div>
     );
