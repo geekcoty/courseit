@@ -11,7 +11,7 @@ import "./App.scss";
 
 
 class App extends React.Component {
-  
+
   render() {
     const pelis = [
       {
@@ -45,7 +45,7 @@ class App extends React.Component {
             backgroundRepeat: "no-repeat",
           }}
         />
-        <Carrousel title="Peliculas" pelis={pelis}/>
+        <Carrousel title="Peliculas" pelis={pelis} />
         <Footer />
       </div>
     );

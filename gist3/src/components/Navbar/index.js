@@ -9,9 +9,11 @@ class Navbar extends React.Component {
     }
   }
   handleChange(e) {
-   this.setState ({
-   inputvalue: e.target.value
-   })
+    const inputvalue =e.target.value;
+    const {handleCallback} = this.props;
+
+
+  handleCallback(inputvalue);
   }
   render() {
     return (

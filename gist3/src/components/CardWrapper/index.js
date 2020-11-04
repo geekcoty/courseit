@@ -3,9 +3,10 @@ import Card from "../CardWrapper/Card";
 import "../CardWrapper/style.css";
 
 class CardWrapper extends React.Component {
-
-  render () {
-   const startups = [
+  constructor (props) {
+    super(props);
+    this.state = {
+      startups : [
      {
        img: "https://i.postimg.cc/B6d7C6LD/su1.jpg",
        title: "CourseIt",
@@ -16,15 +17,28 @@ class CardWrapper extends React.Component {
        title: "Endava",
        description: "Descripción de Endava",
      },
-   ];     
+   ]     
+    }
+  }
+
+  render () {  
+    const {startups} = this.state  
+    const {filter} = this.props
     return (
       <div className="wrapper">
-
       {startups.map((startup, key) => {
-        return( <Card startup={startup} key={key} />)
+      
+        return( 
+        <React.Fragment>
+        {startup.title.toLowerCase().includes(filter.toLowerCase()) && (
+        <Card startup={startup} key={key} 
+        />
    
-      })
-      }
+        )}
+      </React.Fragment>
+        );
+      })}
+      
 
       </div>
     )

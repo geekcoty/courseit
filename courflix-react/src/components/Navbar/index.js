@@ -3,6 +3,7 @@ import "./style.scss";
 import {Link} from "react-router-dom";
 
 class NavBar extends React.Component {
+ 
   render() {
     return (
       <div className="navbar-wrapper">
@@ -12,6 +13,7 @@ class NavBar extends React.Component {
               src="./courflixLogo.png"
               className="navbar-img"
               alt="logo de courflix"
+           
             />
           </Link>
         </div>
