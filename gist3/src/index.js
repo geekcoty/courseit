@@ -2,14 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Prueba from "../src/pages/Prueba"
+import Agregar from "./pages/Agregar"
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter as Router, Route, Link} from "react-router-dom"
+import {BrowserRouter as Router, Route} from "react-router-dom"
 
 ReactDOM.render(
   <Router>
     <Route exact path="/" component={App} />
-    <Route exact path="/prueba" component={Prueba} />
+    <Route exact path="/agregar" component={Agregar} />
   </Router>,
   document.getElementById("root")
 );

@@ -1,0 +1,19 @@
+.prueba-wrapper{
+  text-align: left;
+
+
+}
+.form-wrapper{
+
+  margin-left: 1rem;
+}
+.add-button{
+  margin: 1rem 0 1rem 1rem;
+  padding: 0.20rem;
+  display: block;
+  width: 25%;
+  border-radius: 10px;
+  background-color: white;
+ 
+
+  }
