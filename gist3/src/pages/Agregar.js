@@ -5,31 +5,48 @@ import {Link} from "react-router-dom"
 import "./prueba.css"
 
 class Agregar extends React.Component {
-  render (){
-    return (
-      <div className="prueba-wrapper">
-        <Navbar />
+  constructor(props) {
+    super(props);
+      this.state = {
+        name:"",
+        logo:"",
+        desc:"",
+        url:"",
+        twitter: "",
+        ig:""
+      }
+    }
 
-        <div className="form-wrapper">
-          <p input-title> Nombre</p>
-          <input type="text" />
-          <p input-title> Logo</p>
-          <input type="text" />
-          <p input-title> Descripción</p>
-          <textarea></textarea>
-          <p input-title> Web</p>
-          <input type="url" />
-          <p input-title> Twitter</p>
-          <input type="text" />
-          <p input-title> IG</p>
-          <input type="text" />
-        </div>
-        <button className="add-button"> Agregar Startup</button>
-        <Link to="/"> Home</Link>
-        <Footer />
-      </div>
-    );
-  }
+ render () {
+   return (
+     <div className="prueba-wrapper">
+       <Navbar />
+       <div className="form-wrapper">
+         <p className="input-name"> Nombre</p>
+         <input type="text" name="name" />
+
+         <p className="input-logo">Logo </p>
+         <input type="text" name="logo" />
+
+         <p className="input-desc"> Descripción</p>
+         <input type="text" name="desc" />
+
+         <p className="input-url"> Web</p>
+         <input type="url" name="url" />
+
+         <p className="input-twitter"> Twitter</p>
+         <input type="text" name="twitter" />
+
+         <p className="input-ig"> IG</p>
+         <input type="text" name="ig" />
+       </div>
+       <button className="add-button"> Agregar Startup</button>
+
+       <Link to="/"> Home</Link>
+
+       <Footer />
+     </div>
+   );
 }
-
-export default Agregar
+}
+export default Agregar;
