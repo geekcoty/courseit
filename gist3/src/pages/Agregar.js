@@ -20,10 +20,9 @@ class Agregar extends React.Component {
       const {name, value} = e.target;
 
       this.setState ({
-        name:value
-      })
-    }
-
+        name:value //claves dinamicas
+    })
+  }
  render () {
    return (
      <div className="prueba-wrapper">
