@@ -8,7 +8,7 @@ class Agregar extends React.Component {
   constructor(props) {
     super(props);
       this.state = {
-        name:"",
+        title:"",
         logo:"",
         desc:"",
         url:"",
@@ -20,7 +20,7 @@ class Agregar extends React.Component {
       const {name, value} = e.target;
 
       this.setState ({
-        name : value //claves dinamicas
+        [name] : value //claves dinamicas
     })
   }
  render () {
@@ -31,7 +31,7 @@ class Agregar extends React.Component {
          <p className="input-name"> Nombre</p>
          <input
            type="text"
-           name="name"
+           name="title"
            onChange={(e) => this.handleChange(e)}
          />
 
@@ -62,7 +62,7 @@ class Agregar extends React.Component {
          <p className="input-ig"> IG</p>
          <input type="text" name="ig" onChange={(e) => this.handleChange(e)} />
        </div>
-       <button className="add-button"> Agregar Startup</button>
+       <button className="add-button" onClick = {() => this.handleClick()}>  Agregar Startup</button>
 
        <Link to="/"> Home</Link>
 
