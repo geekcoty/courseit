@@ -16,6 +16,13 @@ class Agregar extends React.Component {
         ig:""
       }
     }
+    handleChange(e) {
+      const {name, value} = e.target;
+
+      this.setState ({
+        name:value
+      })
+    }
 
  render () {
    return (
@@ -23,22 +30,38 @@ class Agregar extends React.Component {
        <Navbar />
        <div className="form-wrapper">
          <p className="input-name"> Nombre</p>
-         <input type="text" name="name" />
+         <input
+           type="text"
+           name="name"
+           onChange={(e) => this.handleChange(e)}
+         />
 
          <p className="input-logo">Logo </p>
-         <input type="text" name="logo" />
+         <input
+           type="text"
+           name="logo"
+           onChange={(e) => this.handleChange(e)}
+         />
 
          <p className="input-desc"> Descripción</p>
-         <input type="text" name="desc" />
+         <input
+           type="text"
+           name="desc"
+           onChange={(e) => this.handleChange(e)}
+         />
 
          <p className="input-url"> Web</p>
-         <input type="url" name="url" />
+         <input type="url" name="url" onChange={(e) => this.handleChange(e)} />
 
          <p className="input-twitter"> Twitter</p>
-         <input type="text" name="twitter" />
+         <input
+           type="text"
+           name="twitter"
+           onChange={(e) => this.handleChange(e)}
+         />
 
          <p className="input-ig"> IG</p>
-         <input type="text" name="ig" />
+         <input type="text" name="ig" onChange={(e) => this.handleChange(e)} />
        </div>
        <button className="add-button"> Agregar Startup</button>
 
