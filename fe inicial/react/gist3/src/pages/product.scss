@@ -1,0 +1,37 @@
+.general-wrapper{
+  margin: auto;
+  width: 750px;
+  position: relative;
+  top:5px;
+  .color-div{
+    background-color: #407294;
+    height: 125px;
+    .startup{
+      padding-top: 6.5rem;
+      padding-left: 11rem;
+      font-weight: 800;
+      color: white;
+    }
+
+  }
+.pic-div{
+  width: 125px;
+  border: white 10px solid;
+  border-radius: 15px;
+  position: absolute;
+  top: 35px;
+  left: 25px;
+    .pic{
+      object-fit: cover;
+      width:125px;
+    }
+  }
+  .content-div{
+    background-color: white;
+    height: 250px;
+    .title{
+      padding-top: 3.5rem;
+      padding-left: 1.5rem;
+    }
+  }
+}

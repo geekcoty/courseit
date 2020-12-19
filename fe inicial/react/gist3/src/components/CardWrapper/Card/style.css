@@ -1,0 +1,9 @@
+.card{
+  text-decoration: none;
+}
+.cardimage{
+  width: 250px;
+}
+.card:visited {
+  color:black
+}

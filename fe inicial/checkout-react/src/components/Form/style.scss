@@ -1,0 +1,25 @@
+.gen-wrapper{
+  .form-subwrapper{
+    justify-content: space-around;
+    padding-top: 2.5rem;
+    font-size: 1rem;
+    .select-input,
+    .pc-input{
+      width:25%;
+      margin-right: 1.5rem;
+    }
+}
+  .form-end-wrapper{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    .form-button{
+      margin-left: 250px;
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: white;
+      border: 0px;
+    }
+  }
+  
+}

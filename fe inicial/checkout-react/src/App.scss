@@ -1,0 +1,26 @@
+.global-wrapper{
+margin: auto;
+padding: 1rem;
+background-color: #95A5A6;
+display: flex;
+width: 950px;
+height: 750px;
+.form-wrapper{
+  margin: 0.50rem;
+  padding: 0.25rem;
+  background-color: #FFC2CD;
+  border-radius: 10px;
+  width: 52%;
+  height: 85%;
+
+}
+.product-wrapper{
+  background-color: #FFE5EA;
+
+  border-radius: 10px;
+  margin: 0.50rem;
+  padding: 0.25rem;
+  width: 48%;
+  height: 65%;
+}
+}

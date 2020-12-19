@@ -1,0 +1,28 @@
+.navbar-wrapper{
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  background-color: #407294;
+  color: aliceblue;
+  font-weight: 600;
+  letter-spacing: 0.15rem;
+  padding: 1.2rem;
+
+}
+.input {
+  max-width:100%;
+  border:  0px;
+}
+.button{
+    background-color: #407294;
+    border: 1px;
+    color: aliceblue;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+  }
+  .link{
+    text-decoration: none;
+  }
+  .link:visited{
+    color: white;
+  }

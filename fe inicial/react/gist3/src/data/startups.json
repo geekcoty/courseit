@@ -1,0 +1,14 @@
+[
+  {
+    "id": "courseit",
+    "title": "CourseIt",
+    "logo": "https://i.postimg.cc/B6d7C6LD/su1.jpg",
+    "desc": "Descripcion de prueba CourseIt"
+  },
+  {
+    "id": "endava",
+    "title": "Endava",
+    "logo": "https://i.postimg.cc/x8Mxp2MZ/su2.jpg",
+    "desc": "Descripcion de prueba Endava"
+  }
+]
