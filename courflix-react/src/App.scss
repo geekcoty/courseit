@@ -1,0 +1,13 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.app-wrapper,
+.content-wrapper{
+ background-color: black;
+ color: white;
+ min-height: 100vh;
+}
