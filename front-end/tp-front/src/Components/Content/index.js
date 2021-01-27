@@ -1,6 +1,7 @@
 import React from "react";
-import Hero from  "./../Components/Hero"
-import Body from "./../Components/Body"
+import Hero from  "./Hero"
+import Body from "./Body"
+
 
 class Content extends React.Component {
   render() {

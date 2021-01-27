@@ -1,16 +1,19 @@
 import React from "react"
-import Header from "./Components/Header"
+import Navbar from "./Components/Navbar"
 import Content from "./Components/Content"
 import Footer from "./Components/Footer"
+
+import "./App.scss"
+
 
 class App extends React.Component {
   render (){
     return (
-      <React.Fragment>
-        <Header/>
+      <div className="app-wrapper">
+        <Navbar/>
         <Content/>
         <Footer/>
-      </React.Fragment>
+      </div>
     )
   }
 }
