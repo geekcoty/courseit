@@ -21,15 +21,15 @@ class Navbar extends React.Component {
             <span className="navbar-item">Home</span>
           </Link>
 
-          <Link to="/series/" className="link">
+          <Link to="#series" className="link">
             <span className="navbar-item">Series</span>
           </Link>
 
-          <Link to="/movies/" className="link">
+          <Link to="#movies" className="link">
             <span className="navbar-item">Movies</span>
           </Link>
 
-          <Link to="/mylist/" className="link">
+          <Link to="#mylist" className="link">
             <span className="navbar-item">My List</span>
           </Link>
         </div>

@@ -1,0 +1,23 @@
+constructor(props) {
+    super(props);
+
+    this.state = {
+      img: "",
+      name: "",
+      desc: ""
+    };
+  }
+
+  componentDidMount() {
+    const filtered = startups.filter((startup) => {
+      return startup.id == this.props.match.params.productId;
+    });
+
+    this.setState({
+      name: filtered[0].name,
+      img: filtered[0].logo,
+      desc: filtered[0].desc
+    });
+  }
+
+    //<p>Mi id es {this.props.match.params.id}</p>
