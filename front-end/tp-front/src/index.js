@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route } from "react-router-dom";
+import MediaPage from './Pages/Media';
 
 ReactDOM.render(
     <Router>
     <Route exact path="/" component={App} />
-    <Route exact path="/series/" component={App} />
-    <Route exact path="/movies/:id" component={App} />
-    <Route exact path="/mylist/" component={App} />
+    <Route exact path="/content/:id" component={MediaPage} />
+    <Route exact path="/mylist/" component={MediaPage} />
   </Router>,
   document.getElementById('root')
 );

@@ -1,8 +1,8 @@
 import React from "react";
+import "./style.scss";
+
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import "./style.scss"
 
 class Footer extends React.Component {
   render() {
@@ -23,4 +23,4 @@ class Footer extends React.Component {
   }
 }
 
-export default Footer
+export default Footer;
