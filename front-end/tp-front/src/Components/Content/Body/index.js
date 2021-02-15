@@ -8,7 +8,6 @@ class Body extends React.Component {
     return (
     
     <Carrousel  content={data} title1={"Series"} title2={"Movies"} title3={"My List"}/>
-      
     ) 
   }
 }
