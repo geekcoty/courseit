@@ -20,7 +20,7 @@ class SlickCarrousel extends React.Component {
     return (
       <div className="content-wrapper">
         <div>
-          <h2 className="title">{title1}</h2>
+          <h2 className="title" id="series">{title1}</h2>
           <div className="series-wrapper">
             <Slider {...this.settings}>
               {content.series.map((data, key) => {
@@ -30,7 +30,7 @@ class SlickCarrousel extends React.Component {
           </div>
         </div>
         <div className="movies-wrapper">
-          <h2 className="title">{title2}</h2>
+          <h2 className="title" id="movies">{title2}</h2>
           <div>
             <Slider {...this.settings}>
               {content.movies.map((data, key) => {
@@ -40,7 +40,7 @@ class SlickCarrousel extends React.Component {
           </div>
         </div>
         <div>
-          <h2 className="title">{title3}</h2>
+          <h2 className="title" id="mylist">{title3}</h2>
           <div className="mylist-wrapper">
             <Slider {...this.settings}>
               {content.series.map((data, key) => {

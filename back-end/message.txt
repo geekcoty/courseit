@@ -1,0 +1,35 @@
+Devolución TP final:
+
+La devolución del TP consta de una corrección de la funcionalidad entregada + revisión a nivel código para ver temas de validaciones y estilo (prolijidad, identación y legibilidad).
+
+Referencia:
+
+Las devoluciones se dividen en tres niveles de importancia,
+Major -> es un error grande y debe ser corregido para aprobar el TP
+Medium -> mejoras que pueden aportar a hacer el código más legible o funcional 
+Minor -> recomendaciones
+
+Tanto en el caso de las devoluciones medium y minor se puede re-entregar el tp para corrección pero no hace falta
+
+Estado del TP: 
+CAMBIOS REQUERIDOS
+
+Corrección:
+Major:
+En passport.js en el compare de la password te falta requerir bcrypt, como estás comparando la pass hasheada vs texto plano falla siempre
+Consejo referido a esto, veo que estás comparando para el caso en el que falla, yo te aconsejo que hagas primero el caso feliz (password === Userdata.password) y que falles solo si esa condiciòn no se cumple porque por como lo tenés ahora te puede llegar a pasar que se logee un usuario que no deba
+Falta el endpoint de /verify (este endpoint no era parte de la consigna en si, pero lo necesitás para que funcione la sesión en los endpoints que chequean login)
+
+Medium:
+En passport.js (linea 4) me explota el import de userService porque está en mayus (UserService) en mac / unix esto puede no ser un problema porque no le importa el casing pero si el OS donde corre es case-sensitive en su sistema de archivos explota al buildear
+En movieController (linea 19) la función addMovie no tiene validación si no llega uno de los campos requeridos, por eso explota y queda siempre esperando una respuesta a la request (agregar validación de que existan los campos requeridos y sino devolver un 400)
+En los endpoints de movies estás chequeando que el user esté logueado pero no que sea admin
+
+Minor: 
+Comentario general sobre estilo del código, si bien no hay drama en tener las cosas en una sola linea (por ejemplo el try / catch  en movieController linea 15) es una buena práctica poner cada uno en su linea por un tema de legibilidad
+Faltó crear la carpeta uploads en el proyecto subido (por como está configurado multer no encuentra donde salvar los files si no la agregás)
+
+
+Comentarios:
+
+Muy bien las validaciones y el estilo de código en general, vamos que falta poquito para que quede 100%!

@@ -1,0 +1,60 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.main-wrapper .header,
+.main-wrapper .header-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  background-color: gray;
+}
+.main-wrapper .header .header-item,
+.main-wrapper .header-menu .header-item {
+  padding-left: 5rem;
+}
+.main-wrapper .hero {
+  text-align: center;
+  background-color: red;
+  height: 5rem;
+}
+.main-wrapper .articles {
+  display: flex;
+  background-color: maroon;
+  justify-content: center;
+  align-content: center;
+  height: 5rem;
+}
+.main-wrapper .articles .indiv-article {
+  background-color: rosybrown;
+  margin: 0.5rem;
+  height: 2rem;
+}
+.main-wrapper .mailing {
+  background-color: mediumpurple;
+  justify-content: center;
+  align-content: center;
+  height: 5rem;
+}
+.main-wrapper .footer,
+.main-wrapper .footer-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: space-around;
+  background-color: blue;
+}
+.main-wrapper .footer .footer-item,
+.main-wrapper .footer-menu .footer-item {
+  padding-left: 5rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
