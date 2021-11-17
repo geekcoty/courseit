@@ -6,17 +6,20 @@ $third-breakpoint-width: 768px;
 *:after,
 *:before {
 	box-sizing: border-box;
-	margin: 0;
+  margin: auto;
 }
 
 .main-wrapper {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
 	align-content: center;
-	justify-content: center;
+	height: 100%;
+	width: 70%;
+  margin-left: 10rem;
+
 	.header,
 	.header-menu {
-		display: flex;
 		justify-content: space-around;
 		align-items: space-around;
 		background-color: gray;
@@ -25,28 +28,41 @@ $third-breakpoint-width: 768px;
 		}
 	}
 	.hero {
-		text-align: center;
+	.hero-title{
+    text-align: left;
+  }
+  .hero-content{
+    text-align: center;
+  }
 		background-color: red;
-        height: 5rem;
+		height: 5rem;
 	}
 	.articles {
 		display: flex;
+		flex-direction: column;
 		background-color: maroon;
 		justify-content: center;
 		align-content: center;
-    height: 5rem;
+		height: 5rem;
+		.title {
+			font-size: 1.5rem;
+		}
+		.subtitle{
+			font-size: 0.5rem;
+		}
+		}
 		.indiv-article {
 			background-color: rosybrown;
 			margin: 0.5rem;
-      height: 2rem;
+			height: 2rem;
 		}
 	}
-  .mailing{
-    background-color: mediumpurple;
-    justify-content: center;
-    align-content: center;
-    height: 5rem;
-  }
+	.mailing {
+		background-color: mediumpurple;
+		justify-content: center;
+		align-content: center;
+		height: 5rem;
+	}
 	.footer,
 	.footer-menu {
 		display: flex;
@@ -56,5 +72,4 @@ $third-breakpoint-width: 768px;
 		.footer-item {
 			padding-left: 5rem;
 		}
-	}
 }

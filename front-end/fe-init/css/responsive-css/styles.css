@@ -2,14 +2,17 @@
 *:after,
 *:before {
   box-sizing: border-box;
-  margin: 0;
+  margin: auto;
 }
 
 .main-wrapper {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-content: center;
-  justify-content: center;
+  height: 100%;
+  width: 70%;
+  margin-left: 10rem;
 }
 .main-wrapper .header,
 .main-wrapper .header-menu {
@@ -23,9 +26,14 @@
   padding-left: 5rem;
 }
 .main-wrapper .hero {
-  text-align: center;
   background-color: red;
   height: 5rem;
+}
+.main-wrapper .hero .hero-title {
+  text-align: left;
+}
+.main-wrapper .hero .hero-content {
+  text-align: center;
 }
 .main-wrapper .articles {
   display: flex;
