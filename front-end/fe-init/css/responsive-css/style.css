@@ -1,0 +1,147 @@
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: auto;
+}
+
+.main-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  width: 70%;
+  margin-left: 10rem;
+}
+
+.main-wrapper .header,
+.main-wrapper .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  background-color: gray;
+}
+
+.main-wrapper .header .header-item,
+.main-wrapper .header-menu .header-item {
+  padding-left: 5rem;
+}
+
+.main-wrapper .hero {
+  background-color: red;
+  height: 10rem;
+}
+
+.main-wrapper .hero .hero-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding-left: 0.5rem;
+  width: 35%;
+}
+
+.main-wrapper .hero .hero-title .hero-title-main {
+  font-size: 2.5rem;
+}
+
+.main-wrapper .hero .hero-content-title {
+  text-align: center;
+}
+
+.main-wrapper .articles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: maroon;
+  height: 10 rem;
+  text-align: center;
+}
+
+.main-wrapper .articles .title {
+  font-size: 1.5rem;
+  margin: 0.2rem;
+}
+
+.main-wrapper .articles .subtitle {
+  font-size: 1rem;
+}
+
+.main-wrapper .article-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-wrapper .article-wrapper .indiv-article {
+  background-color: rosybrown;
+  margin: 0.6rem;
+  height: 2rem;
+}
+
+.mailing {
+  background-color: mediumpurple;
+  height: 8rem;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.mailing .mailing-title {
+  font-size: 1.5rem;
+  margin: 0.2rem;
+}
+
+.mailing .mailing-sub {
+  font-size: 1rem;
+}
+
+.mailing .mailing-input {
+  margin: 0.6rem;
+}
+
+.footer,
+.footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+  background-color: blue;
+  height: 10rem;
+}
+
+.footer .footer-item,
+.footer-menu .footer-item {
+  padding-left: 5rem;
+}
+/*# sourceMappingURL=style.css.map */

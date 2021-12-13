@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
   <link rel="stylesheet" type="text/css" href="reset.css" />
   <title>Responsive</title>
 </head>
@@ -13,38 +13,63 @@
     <div class="header">
       <div class="header-l">L</div>
       <div class="header-menu">
-          <div class="header-item">ABOUT</div>
-          <div class="header-item">ARTICLES</div>
-          <div class="header-item button">SUSCRIBE</div>
+          <div class="header-item"> <a href="#" class="link">about</a></div>
+          <div class="header-item"> <a href="#articles" class="link">articles </a></div>
+          <div class="header-item"> <a href="#subscribe" class="link">
+              <input type="button" value="subscribe" class="subs-btn">
+              </a>
+          </div>
       </div>
     </div>
     <div class="hero">
-      <div class="hero-title"> Hero </div>
-      <div class="hero-content">I'M A HERO BABYYYY</div>
+      <div class="hero-title"> 
+       <p class="hero-title-main">Lava</p>
+       <p class="hero-title-sub">a human exploration</p>
+      </div>
+      <div class="hero-content">
+        <p class="hero-content-main">Slow Travelling</p>
+        <p class="hero-content-sub">a travel blog</p>
+        <p class ="hero-content-descrip">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          Distinctio error quas molestiae aperiam nesciunt eveniet.
+          Distinctio error quas molestiae aperiam nesciunt eveniet.
+        </p>
+      </div>
     </div>
     <div class="articles">
-        <div class="title">Latest Articles</div>
-        <div class="subtitle">Our most recent posts</div>
-      <div class="indiv-article">
+        <div class="title" id="articles">Latest Articles</div>
+        <div class="subtitle">our most recent posts</div>
+      <div class="article-wrapper">
+      <div class="indiv-article tunza">
         <div class="indiv-title">TUNZA</div>
         <div class="indiv-subtitle">RAGGED PORT</div>
       </div>
-      <div class="indiv-article">
+      <div class="indiv-article timor">
         <div class="indiv-title">TIMOR</div>
         <div class="indiv-subtitle">UNTOUCHED BEACHES</div>
       </div>
-      <div class="indiv-article">
+      <div class="indiv-article lombok">
          <div class="indiv-title">LOMBOK</div>
-          <div class="indiv-subtitle">ENDLESS LAVA</div>
+        <div class="indiv-subtitle">ENDLESS LAVA</div>
       </div>
     </div>
-    <div class="mailing"></div>
+    </div>
+    <div class="mailing">
+      <div class="mailing-title" id="subscribe">Subscribe</div>
+      <div class="mailing-sub">sign up to Our Newsletter</div>
+      <div class="mailing-input">
+        <input type="text" class="input">
+      </div>
+      <div class="mailing-button">
+        <input type="button" value="submit" class="button">
+      </div>
+    </div>
     <div class="footer">
       <div class="footer-l">L</div>
       <div class="footer-menu">
-          <div class="footer-item">ABOUT</div>
-          <div class="footer-item">ARTICLES</div>
-          <div class="footer-item">SUSCRIBE</div>
+          <div class="footer-item">about</div>
+          <div class="footer-item">articles</div>
+          <div class="footer-item">subscribe</div>
       </div>
     </div>
   </div>
