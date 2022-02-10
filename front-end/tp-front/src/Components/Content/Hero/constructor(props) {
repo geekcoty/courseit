@@ -21,3 +21,5 @@ constructor(props) {
   }
 
     //<p>Mi id es {this.props.match.params.id}</p>
+
+        this.setState({//serie: filter.length > 0 ? filter[0] : {}// ;

@@ -10,16 +10,10 @@ class Hero extends React.Component {
     this.state = {
       up: "iconStyle",
       down: "iconStyle",
-      mediaName: "",
-      mediaRating: "",
-      mediaSynopsis: "",
-      mediaYear: "",
-      mediaSeasons: "",
-      mediaCover: "",
     };
   }
 
-  
+
   handleClickUp() {
     if (this.state.up === "iconStyle") {
       this.setState({
@@ -48,6 +42,8 @@ class Hero extends React.Component {
   render() {
     const { name, rating, synopsis, year, seasons } = this.props.homeHero;
     const { up, down } = this.state;
+    
+    console.log(this.props.media)
     return (
       <div className="hero-wrapper" style={this.props.style}>
         <div className="general-wrapper">
@@ -61,7 +57,7 @@ class Hero extends React.Component {
             <p className="synopsis">{synopsis}</p>
           </div>
           <a href="http://google.com" className="button">
-            Play episode
+            Play Media
           </a>
           <a href="http://google.com" className="button">
             Add to "My list"
