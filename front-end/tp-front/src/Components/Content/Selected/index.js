@@ -1,10 +1,10 @@
 import React from "react";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import courflix from "../data/courflix.json"
 import "./style.scss";
 
-class Hero extends React.Component {
+class Selected extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -12,7 +12,6 @@ class Hero extends React.Component {
       down: "iconStyle",
     };
   }
-
 
   handleClickUp() {
     if (this.state.up === "iconStyle") {
@@ -40,10 +39,11 @@ class Hero extends React.Component {
   }
 
   render() {
-    const {name,year,synopsis,rating,seasons} = this.props.homeHero || {}
-    const { up, down } = this.state;
+    const {name, rating, synopsis, year, seasons,cover} = this.props;
+    const {up,down} =this.state;
+    
     return (
-      <div className="hero-wrapper" style={this.props.style}>
+      <div className="hero-wrapper">
         <div className="general-wrapper">
           <p className="name"> {name}</p>
           <div className="content-details">
@@ -77,4 +77,4 @@ class Hero extends React.Component {
   }
 }
 
-export default Hero;
+export default Selected
