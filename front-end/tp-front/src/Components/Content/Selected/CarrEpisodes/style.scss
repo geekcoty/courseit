@@ -1,0 +1,16 @@
+$mobileBreakpoint:  480px;
+$tabletBreakpoint:  968px;
+$desktopBreakpoint: 1900px;
+
+.content-wrapper {
+  margin: 2.5rem;
+  .title{
+    margin-bottom: 1.5rem;
+  }
+  .series-wrapper,
+  .movies-wrapper,
+  .mylist-wrapper{
+    margin-bottom: 2.5rem;
+  } 
+}
+
