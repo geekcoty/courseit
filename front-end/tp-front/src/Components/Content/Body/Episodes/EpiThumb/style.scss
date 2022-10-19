@@ -1,0 +1,14 @@
+$mobileBreakpoint:  480px;
+$tabletBreakpoint:  968px;
+$desktopBreakpoint: 1900px;
+
+.episodes-wrapper{
+  display: flex;
+  margin-top: 0.5rem;
+  .epi-inf{
+    padding: 1rem;
+    .epi-title{
+      font-weight: bold;
+    }
+  }
+}

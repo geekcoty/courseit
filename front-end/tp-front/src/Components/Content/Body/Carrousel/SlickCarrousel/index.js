@@ -9,14 +9,16 @@ class SlickCarrousel extends React.Component {
     super(props);
     this.settings = {
       arrows: true,
-      infinite: true,
+      infinite: props.infinite,
       speed: 500,
       slidesToShow: 6,
       slidesToScroll: 1,
     };
   }
   render() {
-    const { title1, title2, title3, content } = this.props;
+    const { title1, title2, title3, content, myList} = this.props;
+
+ 
     return (
       <div className="content-wrapper">
         <div>
@@ -42,9 +44,9 @@ class SlickCarrousel extends React.Component {
         <div>
           <h2 className="title" id="mylist">{title3}</h2>
           <div className="mylist-wrapper">
-            <Slider {...this.settings}>
-              {content.series.map((data, key) => {
-                return <Thumbnail data={data} key={key} />;
+           <Slider {...this.settings}>
+              {myList.map((data,key) => {
+                return <Thumbnail data={data} key={key} />
               })}
             </Slider>
           </div>

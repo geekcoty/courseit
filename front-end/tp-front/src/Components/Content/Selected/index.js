@@ -1,8 +1,7 @@
 import React from "react";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import courflix from "../data/courflix.json"
-import "./style.scss";
+import "./styleSel.scss"
 
 class Selected extends React.Component {
   constructor(props) {
@@ -12,7 +11,9 @@ class Selected extends React.Component {
       down: "iconStyle",
     };
   }
-
+  handleAdd (mediaInfo){
+    this.props.addToMyList(mediaInfo)
+  }
   handleClickUp() {
     if (this.state.up === "iconStyle") {
       this.setState({
@@ -39,27 +40,33 @@ class Selected extends React.Component {
   }
 
   render() {
-    const {name, rating, synopsis, year, seasons,cover} = this.props;
+    const {propName,propRating,propSynopsis,propYear,propSeasons,propCover} = this.props;
     const {up,down} =this.state;
-    
     return (
-      <div className="hero-wrapper">
+      <div className="hero-wrapper"
+       style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${propCover})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat"
+            }}>
         <div className="general-wrapper">
-          <p className="name"> {name}</p>
+          <p className="name"> {propName}</p>
           <div className="content-details">
-            <p className="year">{year}</p>
-            <p className="rating">{rating}</p>
-            <p className="seasons"> {seasons}</p>
+            <p className="year">{propYear}</p>
+            <p className="rating">{propRating}</p>
+            <p className="seasons"> {propSeasons}</p>
           </div>
           <div className="hero-synopsis">
-            <p className="synopsis">{synopsis}</p>
+            <p className="synopsis">{propSynopsis}</p>
           </div>
-          <a href="http://google.com" className="button">
+
+          <button className="button">
             Play Media
-          </a>
-          <a href="http://google.com" className="button">
+          </button>
+          <button className="button" onClick={()=>this.handleAdd()}>
             Add to "My list"
-          </a>
+          </button>
           <FontAwesomeIcon
             icon={faThumbsUp}
             className={up}

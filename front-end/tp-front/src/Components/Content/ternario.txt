@@ -1,5 +1,0 @@
-No, lo que deberias hacer es un ternario para que cargue el hero con la imagen de la serie
-y mientras tanto, mostrar una imagen en negro, o un loading
-Pero, si en cuanto a lugar, es en la page de media, previo a rendirizar el hero, o mejor dicho, para ver cómo renderizas el hero
-Y el resto depende de lo que quieras mostrar en esa page, si un carrousel con otras series, o si queres mostrar unc arrousel con los episodios
-o qué

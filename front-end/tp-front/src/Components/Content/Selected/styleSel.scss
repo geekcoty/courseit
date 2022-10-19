@@ -20,7 +20,7 @@ $hoverLink: grey;
     max-width:45vw;
     padding-top: 2rem;
     .name{
-      font-size: 7.5rem;
+      font-size: 5.5rem;
       font-weight: 800;
     }
     .button {
@@ -28,9 +28,12 @@ $hoverLink: grey;
       margin: 2rem 0.5rem 0rem 0rem;
       background-color: $buttonColor;
       border-radius: 15px;
+      box-shadow: none;
+      border: none;
       text-decoration: none;
       font-size: 1.5rem;
       color:white;
+      
       &:hover{
         background-color: $playButtonColor;
 

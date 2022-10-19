@@ -10,7 +10,6 @@ ReactDOM.render(
     <Router>
     <Route exact path="/" component={App} />
     <Route exact path="/content/:id" component={MediaPage} />
-    <Route exact path="/mylist/" component={MediaPage} />
   </Router>,
   document.getElementById('root')
 );

@@ -8,7 +8,7 @@ class Thumbnail extends React.Component {
     return (
       <React.Fragment>
         <Link to={`/content/${id}`}>
-          <img src={thumbnail} alt="media thumbnail" />
+          <img src={thumbnail} alt="media thumbnail"/>
         </Link>
       </React.Fragment>
     );

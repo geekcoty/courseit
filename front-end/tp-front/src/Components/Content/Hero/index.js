@@ -54,12 +54,12 @@ class Hero extends React.Component {
           <div className="hero-synopsis">
             <p className="synopsis">{synopsis}</p>
           </div>
-          <a href="http://google.com" className="button">
+          <a href="https://www.marsinvestigations.net/" target="_blank" rel="noreferrer"> <button className="button">
             Play Media
-          </a>
-          <a href="http://google.com" className="button">
+          </button> </a>
+          <button className="button" >
             Add to "My list"
-          </a>
+          </button>
           <FontAwesomeIcon
             icon={faThumbsUp}
             className={up}
