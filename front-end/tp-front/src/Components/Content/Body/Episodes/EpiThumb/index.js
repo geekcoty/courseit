@@ -7,11 +7,11 @@ class EpiThumb extends React.Component {
 		return (
 			<div className="episodes-wrapper">
 				<div className="img-wrapper">
-					<img src={epimg} />
+					<img src={epimg}  alt="episode screencap"/>
 				</div>
 				<div className="epi-inf">
 					<p className="epi-title">{epititle}</p>
-					<p>{episynop}</p>
+					<p className="epi-synop">{episynop}</p>
 				</div>
 			</div>
 		);

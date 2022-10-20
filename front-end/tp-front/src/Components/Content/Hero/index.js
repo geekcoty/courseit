@@ -30,6 +30,7 @@ class Hero extends React.Component {
   handelClickDown() {
     if (this.state.down === "iconStyle") {
       this.setState({
+        up: "iconStyle",
         down: "iconStyle down",
       });
     } else {
@@ -57,9 +58,10 @@ class Hero extends React.Component {
           <a href="https://www.marsinvestigations.net/" target="_blank" rel="noreferrer"> <button className="button">
             Play Media
           </button> </a>
+          <a href="https://youtu.be/5KvBAa2PuVo" target="_blank" rel="noreferrer">
           <button className="button" >
-            Add to "My list"
-          </button>
+           Watch Trailer
+          </button> </a>
           <FontAwesomeIcon
             icon={faThumbsUp}
             className={up}

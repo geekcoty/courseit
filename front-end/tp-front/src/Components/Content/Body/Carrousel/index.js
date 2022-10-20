@@ -16,7 +16,7 @@ class Carrousel extends React.Component {
     if(stringMediaList){
       const selectedList = JSON.parse(stringMediaList);
       selectedList.map((item) => {
-        mediaList.push(item)
+       return mediaList.push(item)
       })
     }
 

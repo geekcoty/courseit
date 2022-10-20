@@ -1,5 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom"
+import { HashLink } from 'react-router-hash-link';
+
+import courflixLogo from "../../assets/logo.png"
 
 import "./style.scss"
 
@@ -10,7 +13,7 @@ class Navbar extends React.Component {
         <div className="navbar-logo">
           <Link to="/">
             <img
-              src="/courflixLogo.png"
+              src={courflixLogo}
               className="navbar-img"
               alt="logo de courflix"
             />
@@ -21,17 +24,17 @@ class Navbar extends React.Component {
             <span className="navbar-item">Home</span>
           </Link>
 
-          <Link to="#series" className="link">
+          <HashLink smooth to="/#series" className="link">
             <span className="navbar-item">Series</span>
-          </Link>
+          </HashLink>
 
-          <Link to="#movies" className="link">
+          <HashLink smooth to="/#movies" className="link">
             <span className="navbar-item">Movies</span>
-          </Link>
+          </HashLink>
 
-          <Link to="#mylist" className="link">
+          <HashLink smooth to="#mylist" className="link">
             <span className="navbar-item">My List</span>
-          </Link>
+          </HashLink>
         </div>
       </div>
     );

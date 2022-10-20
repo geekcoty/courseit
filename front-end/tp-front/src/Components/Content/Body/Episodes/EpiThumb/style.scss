@@ -4,11 +4,16 @@ $desktopBreakpoint: 1900px;
 
 .episodes-wrapper{
   display: flex;
+  flex-direction: row;
   margin-top: 0.5rem;
   .epi-inf{
     padding: 1rem;
+  
     .epi-title{
       font-weight: bold;
+    }
+    .epi-synop{
+      text-align: justify;
     }
   }
 }
