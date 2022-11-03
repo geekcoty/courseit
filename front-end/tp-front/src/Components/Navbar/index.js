@@ -1,5 +1,8 @@
 import React from "react";
 import {Link} from "react-router-dom"
+import { faBars} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import { HashLink } from 'react-router-hash-link';
 
 import courflixLogo from "../../assets/logo.png"
@@ -7,9 +10,29 @@ import courflixLogo from "../../assets/logo.png"
 import "./style.scss"
 
 class Navbar extends React.Component {
+   state = {
+    toggle: true,
+  };
+
+  handleToggle(){
+    if (this.state.toggle === true) {
+      this.setState({
+        toggle: false
+      });
+    } else {
+      this.setState({
+        toggle: true
+      });
+    }
+    }
+  
    render() {
+    const {toggle} = this.state
     return (
       <div className="navbar-wrapper">
+        <div className="navbar-responsive">
+          <FontAwesomeIcon icon= {faBars} onClick={() => this.handleToggle()}/>
+        </div>
         <div className="navbar-logo">
           <Link to="/">
             <img
@@ -19,10 +42,25 @@ class Navbar extends React.Component {
             />
           </Link>
         </div>
+        <div className="toggle">
+            <div className={toggle ? "toggle" : ""}>   
+              <li><Link to="/" className="link navbaresp-item">
+          <span>Home</span>
+          </Link> </li>
+              <li> <HashLink smooth to="/#series" className="link navbaresp-item">
+            <span>Series</span>
+          </HashLink></li>
+              <li><HashLink smooth to="/#movies" className="link navbaresp-item">
+            <span>Movies</span>
+          </HashLink></li>
+              <li> <HashLink smooth to="#mylist" className="link navbaresp-item">
+            <span>My List</span>
+          </HashLink></li>
+            </div>
+          </div>
         <div className="navbar-menu">
-          <Link to="/" className="link">
-            <span className="navbar-item">Home</span>
-          </Link>
+        
+        
 
           <HashLink smooth to="/#series" className="link">
             <span className="navbar-item">Series</span>

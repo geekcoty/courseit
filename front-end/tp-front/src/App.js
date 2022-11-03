@@ -17,8 +17,8 @@ class App extends React.Component {
 		return (
 			<div className="app-wrapper">
 				<Navbar />
-				<Hero
-					homeHero={data.series[15]}
+				<Hero className="hero-div"
+ 					homeHero={data.series[15]}
 					style={{
 						backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${data.series[15]
 							.cover})`,

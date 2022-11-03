@@ -1,43 +1,77 @@
-$mobileBreakpoint:  480px;
-$tabletBreakpoint:  968px;
-$desktopBreakpoint: 1900px;
-
+$smallScreen: 480px;
+$mediumScreen: 768px;
+$largeScreen: 1024px;
 $fontColor: white;
 $visitedLink: white;
 $hoverLink: red;
 
+.navbar-wrapper {
+	.navbar-responsive {
+		display: none;
+		@media screen and (max-width: $smallScreen) {
+			display: block;
+			margin-left: 1rem;
+		}
+	}
 
-.navbar-wrapper{
-  height: 7.5vh;
-  padding-top: 0.5rem;
-  position: sticky;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: white;
-  font-weight: 800;
-  font-size: 1.5rem;
-  
-  .navbar-logo{
-    margin-left: 5.5rem;
-  }
-  .navbar-menu{
-     margin-left: 10.5rem;
-    .link{
-      text-decoration: none;
-      color:$fontColor;
-    
-      &:hover {
-        color:$hoverLink;
-      }
-      &:visited {
-        color:$visitedLink;
-      }
+	height: 10vh;
+	padding-top: 0.5rem;
+	position: sticky;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: white;
+	font-weight: 800;
+	font-size: 1.5rem;
 
-      }
-    
-    .navbar-item{
-      margin: 1rem;
-    }
-  }
+	.navbar-logo {
+		margin-left: 5.5rem;
+		align-self: center;
+		@media screen and (max-width: $smallScreen) {
+			margin-left: 7.5rem;
+		}
+	}
+	.toggle {
+		margin-top: 22.5rem;
+		margin-left: -20rem;
+		background-color: black;
+		@media screen  and (max-width: $smallScreen){
+		margin-top: 22.5rem;
+		margin-left: -20rem;
+		background-color: black;
+				.navbaresp-item {
+					text-decoration: none;
+					line-height: 5rem;
+					padding: 2rem;
+					color: $fontColor;
+					&:hover {
+						color: $hoverLink;
+					}
+         
+		}	
+		}
+	
+    } 
+	
+	.navbar-menu {
+		margin-left: 10.5rem;
+		@media screen and (max-width: $smallScreen) {
+			display: none;
+		}
+		.link {
+			text-decoration: none;
+			color: $fontColor;
+
+			&:hover {
+				color: $hoverLink;
+			}
+			&:visited {
+				color: $visitedLink;
+			}
+		}
+
+		.navbar-item {
+			margin: 1rem;
+		}
+	}
 }
