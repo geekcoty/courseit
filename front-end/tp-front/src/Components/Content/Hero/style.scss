@@ -19,42 +19,43 @@ $hoverLink: grey;
   color: $fontColor;
   .general-wrapper{
     padding-top: 2rem;
-               @media screen and (max-width: $smallScreen) {
-        padding-top: 1rem;
-      }
     .name{
       font-size: 5.5rem;
       font-weight: 800;
         @media screen and (max-width: $smallScreen) {
-        font-size: 0.5rem;
+          font-size: 2rem;
       }
     }
 
     .button {
       padding: 1.5rem;
-      margin: 2rem 0.5rem 0rem 0rem;
+      margin: 2rem 0.5rem;
       background-color: $buttonColor;
+      font-size: 1.5rem;
+      color: $fontColor;
       border-radius: 15px;
       box-shadow: none;
       border: none;
       text-decoration: none;
-      font-size: 1.5rem;
-      color: white;
       &:hover{
         background-color: $playButtonColor;
-
+      }
+        @media screen and (max-width: $smallScreen) {
+          padding: 0.75rem;
+          margin: 0.25rem;
+          font-size: 0.35rem;
       }
     }
     .content-details{
       display: flex;
-      font-size: 1.2rem;
+      font-size: 1.5em;
       padding: 1rem 0 1rem 0;
       font-weight: 800;
-                 @media screen and (min-width: $smallScreen) {
-        font-size: 0.5rem;
-      }
       .year, .rating, .seasons {
         padding-right: 1rem;
+        @media screen and (max-width: $smallScreen) {
+          font-size: 0.75rem;
+      }
       }
 
       }
@@ -66,6 +67,9 @@ $hoverLink: grey;
       padding-bottom: 3.5rem;
       font-size: 1.5rem;
       text-align: justify;
+        @media screen and (max-width: $smallScreen) {
+         display: none;
+      }
     }
      .iconStyle{
       padding: 0.6rem;
