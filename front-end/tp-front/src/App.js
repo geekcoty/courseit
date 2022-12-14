@@ -13,6 +13,7 @@ class App extends React.Component {
 	render() {
 		const data = courflix;
 		const courflixArray = Object.values(data);
+		
 
 		return (
 			<div className="app-wrapper">
@@ -24,7 +25,7 @@ class App extends React.Component {
 							.cover})`,
 						backgrounPosition: 'center',
 						backgroundSize: 'cover',
-						backgroundRepeat: 'no-repeat'
+						backgroundRepeat: "no-repeat"
 					}}
 					media={courflixArray}
 				/>

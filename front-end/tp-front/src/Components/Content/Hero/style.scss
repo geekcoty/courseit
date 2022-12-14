@@ -11,17 +11,25 @@ $hoverLink: grey;
 
 .hero-wrapper{
   padding: 2.5rem;
-  min-height: 60vh;
-  max-width: 100vw;
+  height: 100vh;
+  @media screen and (min-width: $smallScreen) {
+    height:60vh;
+  }
+  width: 100%;
   color: $fontColor;
-  background-color: black;
   .general-wrapper{
-    max-width:45vw;
     padding-top: 2rem;
+               @media screen and (max-width: $smallScreen) {
+        padding-top: 1rem;
+      }
     .name{
       font-size: 5.5rem;
       font-weight: 800;
+        @media screen and (max-width: $smallScreen) {
+        font-size: 0.5rem;
+      }
     }
+
     .button {
       padding: 1.5rem;
       margin: 2rem 0.5rem 0rem 0rem;
@@ -31,7 +39,7 @@ $hoverLink: grey;
       border: none;
       text-decoration: none;
       font-size: 1.5rem;
-      color:white;
+      color: white;
       &:hover{
         background-color: $playButtonColor;
 
@@ -42,6 +50,9 @@ $hoverLink: grey;
       font-size: 1.2rem;
       padding: 1rem 0 1rem 0;
       font-weight: 800;
+                 @media screen and (min-width: $smallScreen) {
+        font-size: 0.5rem;
+      }
       .year, .rating, .seasons {
         padding-right: 1rem;
       }

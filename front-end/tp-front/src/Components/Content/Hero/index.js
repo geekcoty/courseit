@@ -2,7 +2,7 @@ import React from "react";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "./style.scss";
+import "./style.scss"
 
 class Hero extends React.Component {
   constructor(props) {
@@ -12,7 +12,6 @@ class Hero extends React.Component {
       down: "iconStyle",
     };
   }
-
 
   handleClickUp() {
     if (this.state.up === "iconStyle") {
