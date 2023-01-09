@@ -2,7 +2,6 @@ $smallScreen: 480px;
 $mediumScreen: 768px;
 $largeScreen: 1024px;
 
-
 $fontColor: white;
 $playButtonColor: #ED0A1D;
 $buttonColor:rgba(157, 151, 151, 0.5415);
@@ -16,46 +15,61 @@ $hoverLink: grey;
     height:60vh;
   }
   width: 100%;
+     @media screen and (max-width: $mediumScreen) {
+       height: 60vh;
+     }
   color: $fontColor;
   .general-wrapper{
     padding-top: 2rem;
+      @media screen and (max-width: $mediumScreen){
+         padding-top: 0.25rem;
+      }
     .name{
       font-size: 5.5rem;
       font-weight: 800;
         @media screen and (max-width: $smallScreen) {
-          font-size: 2rem;
+          font-size: 2.5rem;
       }
+        @media screen and (max-width: $mediumScreen) {
+          font-size: 2rem;
+                 }
     }
 
     .button {
       padding: 1.5rem;
       margin: 2rem 0.5rem;
       background-color: $buttonColor;
-      font-size: 1.5rem;
       color: $fontColor;
       border-radius: 15px;
       box-shadow: none;
       border: none;
+      font-size: 1.5rem;
       text-decoration: none;
       &:hover{
         background-color: $playButtonColor;
       }
         @media screen and (max-width: $smallScreen) {
-          padding: 0.75rem;
-          margin: 0.25rem;
-          font-size: 0.35rem;
+          padding: 1rem;
+          margin: 2rem 0.5rem;
+          font-size: 0.80rem;
+          padding-left: 0.50rem;
+          font-weight: 500;
       }
     }
     .content-details{
       display: flex;
-      font-size: 1.5em;
+      font-size: 1.5rem;
       padding: 1rem 0 1rem 0;
       font-weight: 800;
       .year, .rating, .seasons {
         padding-right: 1rem;
         @media screen and (max-width: $smallScreen) {
           font-size: 0.75rem;
+          padding-left: 0.50rem;
       }
+        @media screen and (max-width: $mediumScreen) {
+          font-size: 1rem;
+                     }
       }
 
       }
@@ -69,6 +83,10 @@ $hoverLink: grey;
       text-align: justify;
         @media screen and (max-width: $smallScreen) {
          display: none;
+      }
+      @media screen and (max-width: $mediumScreen) {
+        font-size: 1.2rem;
+        padding-bottom: 1.5rem;
       }
     }
      .iconStyle{
@@ -87,6 +105,9 @@ $hoverLink: grey;
       &.down {
          color:red;
          border-color: red;
+      }
+         @media screen and (max-width: $smallScreen) {
+         font-size: 3.5rem;
       }
     }
    

@@ -1,7 +1,9 @@
 import React from "react";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./styleSel.scss"
+import selected  from "./selected.module.scss"
+
+import "./fav.scss"
 
 class Selected extends React.Component {
   constructor(props) {
@@ -43,29 +45,30 @@ class Selected extends React.Component {
   render() {
     const {propName,propRating,propSynopsis,propYear,propSeasons,propCover} = this.props;
     const {up,down} =this.state;
+   
     return (
-      <div className="hero-wrapper"
+      <div className={selected.wrapper}
        style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${propCover})`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat"
             }}>
-        <div className="general-wrapper">
-          <p className="name"> {propName}</p>
-          <div className="content-details">
-            <p className="year">{propYear}</p>
-            <p className="rating">{propRating}</p>
-            <p className="seasons"> {propSeasons}</p>
+        <div className={selected.general}>
+          <p className={selected.name}> {propName}</p>
+          <div className={selected.details}>
+            <p className={selected.year}>{propYear}</p>
+            <p className={selected.rating}>{propRating}</p>
+            <p className={selected.seasons}> {propSeasons}</p>
           </div>
-          <div className="hero-synopsis">
-            <p className="synopsis">{propSynopsis}</p>
+          <div className={selected.herosynopsis}>
+            <p className={selected.synopsis}>{propSynopsis}</p>
           </div>
 
-          <button className="button">
+          <button className={selected.button}>
             Play Media
           </button>
-          <button className="button" onClick={()=>this.handleAdd()}>
+          <button className={selected.button} onClick={()=>this.handleAdd()}>
             Add to "My list"
           </button>
           <FontAwesomeIcon

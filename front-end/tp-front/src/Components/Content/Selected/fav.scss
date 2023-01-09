@@ -1,0 +1,44 @@
+$smallScreen: 480px;
+$mediumScreen: 768px;
+$largeScreen: 1024px;
+
+$fontColor: white;
+$playButtonColor: #ed0a1d;
+$buttonColor: rgba(157, 151, 151, 0.5415);
+$visitedLink: white;
+$hoverLink: grey;
+
+.iconStyle {
+  padding: 0.6rem;
+  margin-right: 0.5rem;
+  font-size: 3.5rem;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+  left: 0.3rem;
+  top: 1.15rem;
+  &.up {
+    color: green;
+    border-color: green;
+  }
+  &.down {
+    color: red;
+    border-color: red;
+  }
+  @media screen and (max-width: $smallScreen) {
+    font-size: 3rem;
+    position: relative;
+    left: 14rem;
+    top: -3.15rem;
+  }
+  @media screen and (max-width: $mediumScreen) {
+    font-size: 3rem;
+    left: 22.5rem;
+    top: -3.65rem;
+  }
+  @media screen and (max-width: $largeScreen) {
+    font-size: 4rem;
+    left: 25rem;
+    top: -4.50rem;
+  }
+}

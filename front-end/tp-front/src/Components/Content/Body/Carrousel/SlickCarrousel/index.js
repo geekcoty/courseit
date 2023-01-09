@@ -13,6 +13,23 @@ class SlickCarrousel extends React.Component {
       speed: 500,
       slidesToShow: 6,
       slidesToScroll: 1,
+      accesibility: true,
+      responsive: [
+     {breakpoint: 768,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {breakpoint: 480,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    }
+ ]
+
+
     };
   }
   render() {
@@ -26,7 +43,7 @@ class SlickCarrousel extends React.Component {
           <div className="series-wrapper">
             <Slider {...this.settings}>
               {content.series.map((data, key) => {
-                return <Thumbnail data={data} key={key} />;
+                return <Thumbnail  data={data} key={key} />;
               })}
             </Slider>
           </div>

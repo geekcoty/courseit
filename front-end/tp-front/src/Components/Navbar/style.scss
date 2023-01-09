@@ -30,6 +30,9 @@ $hoverLink: red;
 		@media screen and (max-width: $smallScreen) {
 			margin-left: 7.5rem;
 		}
+		@media screen and (max-width: $mediumScreen) {
+				margin-left: 2rem;
+		}
 	}
 	.toggle {
 		margin-top: 22.5rem;
