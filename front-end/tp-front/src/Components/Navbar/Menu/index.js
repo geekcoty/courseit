@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 class Menu extends React.Component {
   state = {
     toggle: false,
@@ -29,14 +34,16 @@ class Menu extends React.Component {
             <span>My List</span>
           </HashLink>
           <li>
-            <Link to="/" className="link" >Home</Link>
+            <Link to="/" className="link">
+              Home
+            </Link>
           </li>
           <li className="close" onClick={this.menuToggle}>
             X
           </li>
         </ul>
         <div className="menu" onClick={this.menuToggle}>
-          Menu
+        <FontAwesomeIcon icon={faBars} />
         </div>
       </React.Fragment>
     );
