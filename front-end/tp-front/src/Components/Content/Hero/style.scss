@@ -13,6 +13,7 @@ $hoverLink: grey;
   height: 100vh;
   @media screen and (max-width: $smallScreen) {
     height:60vh;
+    width:100%;
   }
   width: 100%;
      @media screen and (max-width: $mediumScreen) {

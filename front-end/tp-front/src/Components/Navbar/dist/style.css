@@ -1,0 +1,40 @@
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  color: white;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 480px) {
+  .navbar-wrapper .navbar-menu {
+    display: none;
+  }
+}
+.navbar-wrapper .navbar-menu .navbar-item {
+  margin: 1rem;
+}
+.navbar-wrapper .navbar-menu .link {
+  text-decoration: none;
+  color: white;
+}
+.navbar-wrapper .navbar-menu .link:hover {
+  color: red;
+}
+.navbar-wrapper .navbar-menu .link:visited {
+  color: white;
+}
+.navbar-wrapper .navbar-responsive {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .navbar-wrapper .navbar-responsive {
+    display: block;
+  }
+}
+.navbar-wrapper .toggle {
+  background-color: red;
+}
+.navbar-wrapper .toggle .resp-item {
+  list-style: none;
+}

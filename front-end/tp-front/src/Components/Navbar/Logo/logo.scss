@@ -1,0 +1,11 @@
+ $smallScreen: 480px;
+ $mediumScreen: 768px;
+ $largeScreen: 1024px;
+ .logo {
+   margin-left: 3.12rem;
+   @media (max-width: $smallScreen){
+     width: initial;
+     margin-left: 2.50rem;
+     left: 4.37rem;
+   }
+ }
