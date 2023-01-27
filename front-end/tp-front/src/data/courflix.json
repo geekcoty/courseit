@@ -1683,5 +1683,16 @@
 	"id":32,
 	"type": "movie"
 }
-]
+],
+"portada": {
+	"name":"Veronica Mars",
+	"synopsis":"In the fictional town of Neptune, California, student Veronica Mars progresses from high school to college while moonlighting as a private investigator under the tutelage of her detective father.",
+	"year": 2004,
+	"rating": "TV-14",
+	"cover":"https://i.postimg.cc/fRdfhD6S/vmarscover.jpg",
+	"thumbnail":"https://i.postimg.cc/TPvvjC0r/vmars1.png",
+	"id":16,
+	"type": "serie",
+	"seasons" : "1 season"
+}
 	}

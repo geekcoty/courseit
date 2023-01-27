@@ -1,85 +1,83 @@
 import React from "react";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import selected  from "./selected.module.scss"
-
-import "./fav.scss"
+import "./selected.scss"
 
 class Selected extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      up: "iconStyle",
-      down: "iconStyle",
+      selectedUp: "iconStyle",
+      selectedDown: "iconStyle",
     };
   }
   handleAdd (mediaInfo){
     this.props.addToMyList(mediaInfo)
   }
   handleClickUp() {
-    if (this.state.up === "iconStyle") {
+    if (this.state.selectedUp === "iconStyle") {
       this.setState({
-        up: "iconStyle up",
-        down: "iconStyle",
+        selectedUp: "iconStyle selectedUp",
+        selectedDown: "iconStyle",
       });
     } else {
       this.setState({
-        up: "iconStyle",
+        selectedUp: "iconStyle",
       });
     }
   }
 
   handelClickDown() {
-    if (this.state.down === "iconStyle") {
+    if (this.state.selectedDown === "iconStyle") {
       this.setState({
-        up: "iconStyle",
-        down: "iconStyle down",
+        selectedUp: "iconStyle",
+        selectedDown: "iconStyle selectedDown",
       });
     } else {
       this.setState({
-        down: "iconStyle",
+        selectedDown: "iconStyle",
       });
     }
   }
 
   render() {
     const {propName,propRating,propSynopsis,propYear,propSeasons,propCover} = this.props;
-    const {up,down} =this.state;
+    const {selectedUp,selectedDown} =this.state;
    
     return (
-      <div className={selected.wrapper}
-       style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${propCover})`,
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat"
-            }}>
-        <div className={selected.general}>
-          <p className={selected.name}> {propName}</p>
-          <div className={selected.details}>
-            <p className={selected.year}>{propYear}</p>
-            <p className={selected.rating}>{propRating}</p>
-            <p className={selected.seasons}> {propSeasons}</p>
+      <div
+        className="selectedWrapper"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${propCover})`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
+        <div className="selectedGeneral">
+          <p className="selectedName"> {propName}</p>
+          <div className="selectedDetails">
+            <p className="selectedYear">{propYear}</p>
+            <p className="selectedRating">{propRating}</p>
+            <p className="selectedSeasons"> {propSeasons}</p>
           </div>
-          <div className={selected.herosynopsis}>
-            <p className={selected.synopsis}>{propSynopsis}</p>
+          <div className="selectedHerosynopsis">
+            <p className="selectedSynopsis">{propSynopsis}</p>
           </div>
 
-          <button className={selected.button}>
-            Play Media
-          </button>
-          <button className={selected.button} onClick={()=>this.handleAdd()}>
+          <button className="selectedButton">Play Media</button>
+          <button className="selectedButton" onClick={() => this.handleAdd()}>
             Add to "My list"
           </button>
           <FontAwesomeIcon
             icon={faThumbsUp}
-            className={up}
+            className={selectedUp}
             onClick={() => this.handleClickUp()}
           />
           <FontAwesomeIcon
             icon={faThumbsUp}
             rotation={180}
-            className={down}
+            className={selectedDown}
             onClick={() => this.handelClickDown()}
           />
         </div>

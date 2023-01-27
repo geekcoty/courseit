@@ -43,26 +43,26 @@ $hoverLink: red;
       transition: 0.5s linear;
     }
 
-    li {
+    .item {
       display: inline-block;
       line-height: normal;
-
-      .link {
+       .link {
         text-decoration: none;
         color: $fontColor;
         padding: 0 0.93rem;
 
-        &:hover {
+        & :hover {
           color: red;
         }
 
-        &:visited {
-          text-decoration: none;
+        & :visited {
           color: white;
+          text-decoration:line-through;
         }
-      }
     }
   }
+   
+      }
 
   .toggle {
     left: 0;

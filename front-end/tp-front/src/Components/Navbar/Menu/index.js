@@ -6,6 +6,8 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import "./navbar.scss"
+
 class Menu extends React.Component {
   state = {
     toggle: false,
@@ -20,12 +22,12 @@ class Menu extends React.Component {
     return (
       <React.Fragment>
         <ul className={toggle ? "toggle" : ""}>
-          <li>
+          <li className="item">
             <HashLink smooth to="/#series" className="link">
               <span>Series</span>
             </HashLink>
           </li>
-          <li>
+          <li className="item">
             <HashLink smooth to="/#movies" className="link">
               <span>Movies</span>
             </HashLink>
@@ -33,7 +35,7 @@ class Menu extends React.Component {
           <HashLink smooth to="#mylist" className="link">
             <span>My List</span>
           </HashLink>
-          <li>
+          <li className="item">
             <Link to="/" className="link">
               Home
             </Link>
@@ -43,7 +45,7 @@ class Menu extends React.Component {
           </li>
         </ul>
         <div className="menu" onClick={this.menuToggle}>
-        <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBars} />
         </div>
       </React.Fragment>
     );

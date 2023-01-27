@@ -4,7 +4,7 @@ import Logo from "./Logo";
 
 import Menu from "./Menu";
 
-import "./navbar.scss";
+
 
 class Navbar extends React.Component {
  
