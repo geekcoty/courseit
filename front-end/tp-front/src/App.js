@@ -25,7 +25,7 @@ class App extends React.Component {
           media={courflixArray}
           style={{
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${data.series[15].cover})`,
-            backgrounPosition: "center",
+            backgroundPosition: "center",
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
           }}
