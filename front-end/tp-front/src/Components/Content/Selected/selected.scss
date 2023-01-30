@@ -1,6 +1,6 @@
 $smallScreen: 480px;
 $mediumScreen: 768px;
-$largeScreen: 1024px;
+
 
 $fontColor: white;
 $playButtonColor: #ed0a1d;
@@ -10,7 +10,7 @@ $hoverLink: grey;
 
 .selectedWrapper {
   max-width: 100%;
-  padding: 1.5rem;
+  padding: 2rem;
   min-height: 85vh;
   color: $fontColor;
 

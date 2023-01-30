@@ -1,9 +1,0 @@
-$smallScreen: 480px;
-$mediumScreen: 768px;
-$largeScreen: 1024px;
-
-.thumb{
-   @media screen and (max-width: $smallScreen) {
-    margin: 1.5rem;
-  }
-}
