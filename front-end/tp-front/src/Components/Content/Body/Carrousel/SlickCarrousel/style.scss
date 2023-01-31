@@ -1,19 +1,15 @@
-$smallScreen: 480px;
-$mediumScreen: 768px;
-
-
 .content-wrapper {
   margin: 2.5rem;
   background-color: black;
-  .title{
+
+  .title {
     margin-bottom: 1.5rem;
   }
+
   .series-wrapper,
   .movies-wrapper,
-  .mylist-wrapper{
+  .mylist-wrapper {
     margin-bottom: 2.5rem;
-   
-  } 
+
+  }
 }
-
-

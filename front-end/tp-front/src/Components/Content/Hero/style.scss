@@ -127,9 +127,10 @@ $hoverLink: grey;
       font-size: 3rem;
       margin-top: -1rem;
     }
-         @media screen and (max-width: $mediumScreen) {}
-    
-         font-size: 3.5rem;
-         margin-top: 1rem;
-         }
+
+    @media screen and (max-width: $mediumScreen) {}
+
+    font-size: 3.5rem;
+    margin-top: 1rem;
+  }
 }

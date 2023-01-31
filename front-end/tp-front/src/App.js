@@ -1,22 +1,19 @@
-import React from 'react';
-import Navbar from './Components/Navbar';
+import React from "react";
+import Navbar from "./Components/Navbar";
 
-import Footer from './Components/Footer';
-import Hero from './Components/Content/Hero';
-import Body from './Components/Content/Body';
+import Footer from "./Components/Footer";
+import Hero from "./Components/Content/Hero";
+import Body from "./Components/Content/Body";
 
-import './App.scss';
-import courflix from './data/courflix.json';
+import "./App.scss";
+import courflix from "./data/courflix.json";
 
 class App extends React.Component {
+  render() {
+    const data = courflix;
+    const courflixArray = Object.values(data);
 
-
-	render() {
-		const data = courflix;
-		const courflixArray = Object.values(data);
-
-	
-		return (
+    return (
       <div className="app-wrapper">
         <Navbar />
         <Hero
@@ -35,7 +32,7 @@ class App extends React.Component {
         <Footer />
       </div>
     );
-	}
+  }
 }
 
 export default App;

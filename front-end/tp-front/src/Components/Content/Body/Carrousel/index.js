@@ -1,44 +1,42 @@
-import React from "react"
-import SlickCarrousel from "../Carrousel/SlickCarrousel"
-
+import React from "react";
+import SlickCarrousel from "../Carrousel/SlickCarrousel";
 
 class Carrousel extends React.Component {
-  	constructor(props) {
-		super(props);
-		this.state = {
-			myList: []
-		};
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      myList: [],
+    };
+  }
 
-	componentDidMount() {
-    const mediaList = []
-    const stringMediaList = localStorage.getItem("myMedia")
-    if(stringMediaList){
+  componentDidMount() {
+    const mediaList = [];
+    const stringMediaList = localStorage.getItem("myMedia");
+    if (stringMediaList) {
       const selectedList = JSON.parse(stringMediaList);
       selectedList.map((item) => {
-       return mediaList.push(item)
-      })
+        return mediaList.push(item);
+      });
     }
 
     this.setState({
-      myList: mediaList
-    })
-	}
+      myList: mediaList,
+    });
+  }
 
-  render () {
-    const { content} =this.props
-    const {myList} = this.state
+  render() {
+    const { content } = this.props;
+    const { myList } = this.state;
     return (
       <SlickCarrousel
         content={content}
         title1={"Series"}
         title2={"Movies"}
         title3={"My List"}
-        myList= {myList}
+        myList={myList}
       />
     );
   }
 }
 
-
-export default Carrousel
+export default Carrousel;

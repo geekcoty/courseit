@@ -35,28 +35,31 @@ class SlickCarrousel extends React.Component {
             slidesToShow: 5,
             slidesToScroll: 5,
           },
-        }
+        },
       ],
     };
   }
   render() {
-    const { title1, title2, title3, content, myList} = this.props;
+    const { title1, title2, title3, content, myList } = this.props;
 
- 
     return (
       <div className="content-wrapper">
         <div>
-          <h2 className="title" id="series">{title1}</h2>
+          <h2 className="title" id="series">
+            {title1}
+          </h2>
           <div className="series-wrapper">
             <Slider {...this.settings}>
               {content.series.map((data, key) => {
-                return <Thumbnail  data={data} key={key} />;
+                return <Thumbnail data={data} key={key} />;
               })}
             </Slider>
           </div>
         </div>
         <div className="movies-wrapper">
-          <h2 className="title" id="movies">{title2}</h2>
+          <h2 className="title" id="movies">
+            {title2}
+          </h2>
           <div>
             <Slider {...this.settings}>
               {content.movies.map((data, key) => {
@@ -66,11 +69,13 @@ class SlickCarrousel extends React.Component {
           </div>
         </div>
         <div>
-          <h2 className="title" id="mylist">{title3}</h2>
+          <h2 className="title" id="mylist">
+            {title3}
+          </h2>
           <div className="mylist-wrapper">
-           <Slider {...this.settings}>
-              {myList.map((data,key) => {
-                return <Thumbnail data={data} key={key} />
+            <Slider {...this.settings}>
+              {myList.map((data, key) => {
+                return <Thumbnail data={data} key={key} />;
               })}
             </Slider>
           </div>

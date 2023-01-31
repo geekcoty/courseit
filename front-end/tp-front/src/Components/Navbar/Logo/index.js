@@ -1,7 +1,7 @@
 import React from "react";
 import "./logo.scss";
 import { Link } from "react-router-dom";
-import courflixLogo from "../../../assets/logo.png"
+import courflixLogo from "../../../assets/logo.png";
 
 class Logo extends React.Component {
   render() {

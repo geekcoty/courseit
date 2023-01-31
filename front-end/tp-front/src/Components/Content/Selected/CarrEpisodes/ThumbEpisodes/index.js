@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 class Thumbnail extends React.Component {
   render() {
-    const { thumbnail, id} = this.props.data;
+    const { thumbnail, id } = this.props.data;
 
     return (
       <React.Fragment>

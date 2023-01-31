@@ -5,34 +5,38 @@ $fontColor: white;
 $visitedLink: white;
 $hoverLink: red;
 
-.footer-wrapper{
+.footer-wrapper {
   display: flex;
   height: 7.5vh;
   padding-top: 0.5rem;
 
-  
+
   justify-content: space-around;
   align-items: center;
-  
+
   color: $fontColor;
   font-weight: 800;
   font-size: 1.5rem;
-     @media screen and (max-width: $smallScreen) {
-      font-weight:800;
-      font-size: 1rem;
-     }
-     @media screen and (max-width: $mediumScreen) {
-      font-weight: 300;
-      font-size: 1.5rem;
-     }
-  
-  .twitter-handle{
+
+  @media screen and (max-width: $smallScreen) {
+    font-weight: 800;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: $mediumScreen) {
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+  .twitter-handle {
     text-decoration: none;
-    &:hover{
+
+    &:hover {
       color: $hoverLink;
     }
-    &:visited{
+
+    &:visited {
       color: $visitedLink;
     }
-  }  
+  }
 }

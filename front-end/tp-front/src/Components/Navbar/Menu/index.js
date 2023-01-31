@@ -6,7 +6,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "./navbar.scss"
+import "./navbar.scss";
 
 class Menu extends React.Component {
   state = {
@@ -16,7 +16,7 @@ class Menu extends React.Component {
   menuToggle = () => {
     this.setState({ toggle: !this.state.toggle });
   };
-  
+
   render() {
     const { toggle } = this.state;
     return (

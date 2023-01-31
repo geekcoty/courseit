@@ -2,7 +2,7 @@ $smallScreen: 480px;
 $mediumScreen: 768px;
 
 $fontColor: white;
-$visitedLink:white;
+$visitedLink: white;
 $hoverLink: red;
 
 .navbar-wrapper {
@@ -46,7 +46,8 @@ $hoverLink: red;
     .item {
       display: inline-block;
       line-height: normal;
-       .link {
+
+      .link {
         text-decoration: none;
         color: $fontColor;
         padding: 0 0.93rem;
@@ -57,12 +58,12 @@ $hoverLink: red;
 
         & :visited {
           color: white;
-          text-decoration:line-through;
+          text-decoration: line-through;
         }
-    }
-  }
-   
       }
+    }
+
+  }
 
   .toggle {
     left: 0;

@@ -1,7 +1,7 @@
 import React from "react";
 import { faThumbsUp } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./selected.scss"
+import "./selected.scss";
 
 class Selected extends React.Component {
   constructor(props) {
@@ -11,8 +11,8 @@ class Selected extends React.Component {
       selectedDown: "iconStyle",
     };
   }
-  handleAdd (mediaInfo){
-    this.props.addToMyList(mediaInfo)
+  handleAdd(mediaInfo) {
+    this.props.addToMyList(mediaInfo);
   }
   handleClickUp() {
     if (this.state.selectedUp === "iconStyle") {
@@ -41,9 +41,16 @@ class Selected extends React.Component {
   }
 
   render() {
-    const {propName,propRating,propSynopsis,propYear,propSeasons,propCover} = this.props;
-    const {selectedUp,selectedDown} =this.state;
-   
+    const {
+      propName,
+      propRating,
+      propSynopsis,
+      propYear,
+      propSeasons,
+      propCover,
+    } = this.props;
+    const { selectedUp, selectedDown } = this.state;
+
     return (
       <div
         className="selectedWrapper"
@@ -86,4 +93,4 @@ class Selected extends React.Component {
   }
 }
 
-export default Selected
+export default Selected;

@@ -1,18 +1,16 @@
-$mobileBreakpoint:  480px;
-$tabletBreakpoint:  968px;
-$desktopBreakpoint: 1900px;
-
-.episodes-wrapper{
+.episodes-wrapper {
   display: flex;
   flex-direction: row;
   margin-top: 0.5rem;
-  .epi-inf{
+
+  .epi-inf {
     padding: 1rem;
-  
-    .epi-title{
+
+    .epi-title {
       font-weight: bold;
     }
-    .epi-synop{
+
+    .epi-synop {
       text-align: justify;
     }
   }
